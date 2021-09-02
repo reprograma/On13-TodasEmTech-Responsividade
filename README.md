@@ -24,13 +24,13 @@ Responsividade:
 
 
 ## Combinados e dinâmicas
-- [] em uma palavra qual a sensação pra aula de hoje?
-- [] [nosso dontpad](http://dontpad.com/todasemtech13-responsividade)
-- [] 5 minutinhos para escrever dúvidas que ficaram da semana passada ainda
+- 
+- [nosso dontpad](http://dontpad.com/todasemtech13-responsividade)
+- 5 minutinhos para escrever dúvidas que ficaram da semana passada ainda
 
-## Retomando github! :)
-- [] tendo dois repositórios remotos com a upstream. `git remote add upstream ...` 
-- [] branch's, commit's, push's e pull's
+## Retomando git e github! 
+- como criar meu repo local e remoto pelo git?
+- branch's, commit's, push's e pull's
 
 ---
 
@@ -397,7 +397,7 @@ Título: #fff
 
 <!-- ---
 
-#### Referências utilizadas para a construção deste material - créditos à Liana Alice <3
+#### Referências utilizadas para a construção deste material -> créditos à Liana Alice <3
 
 * [Repositório - On10-TodasEmTech-Responsividade](https://github.com/reprograma/On10-TodasEmTech-Responsividade)
  -->
