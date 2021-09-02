@@ -24,7 +24,6 @@ Responsividade:
 
 
 ## Combinados e dinâmicas
-- 
 - [nosso dontpad](http://dontpad.com/todasemtech13-responsividade)
 - 5 minutinhos para escrever dúvidas que ficaram da semana passada ainda
 
@@ -397,7 +396,7 @@ Título: #fff
 
 <!-- ---
 
-#### Referências utilizadas para a construção deste material -> créditos à Liana Alice <3
+#### Repositório utilizado para essa aula -> créditos à Liana Alice <3
 
 * [Repositório - On10-TodasEmTech-Responsividade](https://github.com/reprograma/On10-TodasEmTech-Responsividade)
  -->
