@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <title> Locadora de filmes da {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#" class="menu-navegacao__link">Lançamentos</a></li>
+                <li><a href="#" class="menu-navegacao__link">Clássicos</a></li>
+                <li><a href="#" class="menu-navegacao__link"> 5 estrelas</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, seja bem vindo(a) a minha locadora</h1>
+            <p class="banner__subtitulo">Aqui você encontra todos os tipos de filmes, desde os antigões aos atuais.</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao">
+            <h2 class="card-introducao__titulo">Sobre a Locadora</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>É considerada história de Teixeira Santana, sendo uma das poucas locadoras ainda viva. Escolhemos
+                        nos manter, porque a história dos filmes são ricas. </p>
+                    <p>E tem filmes que nenhum stream tem, somente nós.</p>
+                    <p>Nosso endereço é na Rua marajô queiroz, 3030. Atuamos também pelo número (55) 89799998 :)</p>
+                </div>
+                <img src="img/popcorn.png" alt="balde de pipoca" class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-form">
+            <h2 class="container-form__titulo">Deixo teu contato para te mandarmos o nosso catalógo</h2>
+            <div class="outsideInputs">
+                <form class="forms">
+                    <label for="name">Nome</label>
+                    <input type="text"  placeholder="Nome Completo" required>
+                    <label for="email">Email</label>
+                    <input type="email"  placeholder="seuemail@gmail.com">
+                    <label for="phone">Telefone</label>
+                    <input type="number"  placeholder="(DD) 8888-8888">
+                    <label for="send"></label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Catálogo</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3 class="categoryTitle">Clássico</h3>
+                    <h4 class="movieName"> Breakfast at Tiffany's</h4>
+                    <img src="https://i.pinimg.com/originals/16/20/ca/1620ca50481c13c088319ee594119fa6.jpg"
+                        class="bannerMovie" alt="">
+                    <h5 class="sinopse">Sinopse</h5>
+                    <p class="sinopseMovie"> Holly Golightly (Audrey Hepburn) é uma garota de programa nova-iorquina que
+                        está decidida a casar-se com um milionário. Perdida entre a inocência, ambição e futilidade, ela
+                        toma seus cafés da manhã em frente à famosa joalheria Tiffany`s, na intenção de fugir dos
+                        problemas. </p>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3 class="categoryTitle">Lançamentos</h3>
+                    <h4 class="movieName"> The green knight</h4>
+                    <img src="img/MV5BNWE1ZGE5Y2QtYWE4Yi00YjM0LThhNWYtMWM1OGJjNDU3YzMyXkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_.jpg"
+                        class="bannerMovie" alt="">
+                    <h5 class="sinopse">Sinopse</h5>
+                    <p class="sinopseMovie">A história é uma reimaginação da clássica lenda de Gawain e o Cavaleiro
+                        Verde. O guerreiro em questão invadiu a corte de Rei Arthur, desafiando qualquer um dos membros
+                        da Távola Redonda a atacá-lo com seu machado – mas ele retornaria para devolver o golpe em um
+                        ano e um dia.
+                    </p>
+                </div>
+                <div class="lista">
+                    <h3 class="categoryTitle">Horror movie</h3>
+                    <h4 class="movieName">Us</h4>
+                    <ul class="lista__item">
+                        <img src="img/BEM2.jpg" class="bannerMovie" alt="poster do filme">
+                        <h5 class="sinopse">Sinopse</h5>
+                        <p class="sinopseMovie">Adelaide (Lupita Nyong'o) e Gabe (Winston Duke) decidem levar a família
+                            para passar um fim de semana na praia e descansar em uma casa de veraneio. Eles viajam com
+                            os filhos e começam a aproveitar o ensolarado local, mas a chegada de um grupo misterioso
+                            muda tudo.
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Aline Viana - Aula {Reprograma} | © Copyright 2021</p>
+    </footer>
+</body>
+
+</html>
