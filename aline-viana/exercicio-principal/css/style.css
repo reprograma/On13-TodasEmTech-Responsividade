@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.menu {
+  width: 100%;
+  background-color: #073d69;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+}
+.menu-nav {
+  display: flex;
+  list-style: none;
+}
+
+.menu-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+.menu-nav__link:hover {
+  background-color: white;
+  color: blue;
+  border-radius: 10px;
+}
+
+.background-header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background-header__img {
+  background-size: cover;
+}
+
+#background-header__text{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.background-header__title {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+
+.background-header__subtitle {
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(243, 239, 239);
+}
+
+.card-introducao,
+.container-form,
+.card-gostos {
+  padding: 4%;
+}
+
+.card-introducao__titulo {
+  color: rgb(15, 13, 15);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container-texto {
+  display: flex;
+  align-items: center;
+}
+
+.container-texto__paragrafos {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.container-texto__paragrafos p,
+.container-form__paragrafo p {
+  color: rgb(41, 39, 39);
+  font-size: 17px;
+  margin-bottom: 17px;
+  text-align: justify;
+}
+
+.container-texto__imagem {
+  width: 30%;
+}
+
+.container-form__titulo {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+.container-form {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #073d69;
+  margin: 0px 50px;
+  text-align: center;
+}
+label {
+  font-size: 20px;
+  color: white;
+}
+form input:not(:last-child) {
+  width: 36vh;
+  height: 5.5vh;
+  border-radius: 10px;
+  border-color: none;
+  font-size: 1rem;
+}
+input::-webkit-outer-spin-submit,
+input::-webkit-inner-spin-submit {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type="submit"] {
+  background-color: #e5bc30;
+  border-color: none;
+  font-size: 1rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+form input[type="submit"]:hover {
+  background-color: white;
+}
+
+.card-gostos__titulo {
+  font-size: 25px;
+  color: #20171f;
+  margin-bottom: 30px;
+}
+
+.container-listas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wraap;
+}
+
+.lista {
+  width: 60vh;
+  background-color: #073d69;
+  border-radius: 10px;
+  padding: 16px;
+  margin-left: 10px;
+}
+
+.lista h3 {
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sinopse,
+.sinopseMovie,
+.movieName,
+footer {
+  color: white;
+}
+.movieName {
+  font-size: 20px;
+  text-align: center;
+}
+.sinopseMovie {
+  text-align: justify;
+}
+
+.background-headerMovie {
+  width: 34vh;
+  height: 50vh;
+  margin: 2vh 10vh;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #073d69;
+}
+
+/* @media (min-width: 360px) {
+  /* GalaxyS5 */
+
+  /* {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    } 
+  .nav-header {
+  }
+
+  .background-header__title {
+  }
+}
+
+/* @media (min-width: 375px) {
+  Iphone x */
