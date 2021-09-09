@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estiloform.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&family=Gudea&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fala Comigo</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <a href="" class="menu__logo">{P.S}</a>
+        <ul class="menu-navegacao">
+          <li>
+            <a
+              href="https://www.instagram.com/pri_kariina/"
+              class="menu-navegacao__link"
+              target="blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/priscila-santos-souza/"
+              class="menu-navegacao__link"
+              target="blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="#" class="menu-navegacao__link" target="blank"
+              >Fala Comigo</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="banner">
+        <h1 class="banner__titulo">Preencha aqui o Formulário</h1>
+      </div>
+    </header>
+
+    <section class="fale-conosco" id="fale-conosco">
+      <h2>Fale Conosco</h2>
+      <form>
+        <div class="campo-form">
+          <label for="nome">Nome Completo:</label>
+          <input
+            id="nome"
+            type="text"
+            placeholder="Digite o seu Nome Completo"
+            required
+          />
+
+          <label for="idade">Qual a sua idade?</label>
+          <input
+            id="idade"
+            type="number"
+            name="idade"
+            min="0"
+            max="120"
+            value="0"
+            required
+          />
+
+          <label for="email">Digite o seu Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="seuemail@dominio.com"
+            required
+          />
+
+          <label for="telefone">Seu Telefone:</label>
+          <input
+            id="telefone"
+            type="tel"
+            name="telefone"
+            placeholder="(00) 0 0000-0000"
+            required
+          />
+
+          <label for="mensagem">Deixe uma Mensagem:</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Digite sua Mensagem"
+          ></textarea>
+
+          <label for="comidas">Qual a sua comida Favorita?</label>
+          <select name="comidas-que-eu-gosto" id="comidas">
+            <option value="coxinha">Coxinha</option>
+            <option value="pastel">Pastel</option>
+            <option value="hamburguer">Hambúrguer</option>
+            <option value="pizza">Pizza</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Como podemos entrar em contato com você?</legend>
+          <input
+            type="radio"
+            value="whatsapp"
+            name="contato"
+            id="whatsapp"
+          /><label for="whatsapp">Whatsapp</label>
+          <input
+            type="radio"
+            value="linkedin"
+            name="contato"
+            id="linkedin"
+          /><label for="linkedin">LinkedIn</label>
+          <input
+            type="radio"
+            value="email1"
+            name="contato"
+            id="email1"
+          /><label for="email1">Email</label>
+        </fieldset>
+
+        <div>
+          <input type="checkbox" checked /><label
+            >Só pra você não esquecer que é incrível, tá?</label
+          >
+        </div>
+
+        <div class="form-botao">
+          <input type="submit" value="Enviar Formulário" />
+        </div>
+      </form>
+    </section>
+
+    <footer>
+        <p>Priscila Souza - {Reprograma} | ©️ Copyright 2021</p>
+      </footer>
+  </body>
+</html>
