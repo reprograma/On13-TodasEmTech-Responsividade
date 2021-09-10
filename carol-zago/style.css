@@ -1,0 +1,97 @@
+* {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9c9494;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.div-1 {
+    width: 100%;
+}
+
+div>p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+div>p:hover {
+    color: #ec55a1;
+    font-weight: bolder;
+}
+
+input:first-child {
+    color: #6d5ccd;
+}
+
+.div-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-2>input {
+    margin: 15px;
+}
+
+.div-2>input:focus {
+    background-color: #d64475;
+}
+
+.div-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.div-3>img {
+    min-width: 85vw;
+    margin: 10px;
+}
+
+.div-3+div {
+    display: flex;
+    flex-direction: column;
+    border: #bdbd47 5px solid;
+}
+
+div>a {
+    text-decoration: none;
+    color: #382d38;
+    font-size: 1.2rem;
+}
+
+div>a:hover {
+    font-weight: bolder;
+}
+
+@media(min-width:768px) {
+    .div-3+div {
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+    }
+    * {
+        font-size: 16px;
+        background-color: #518539;
+    }
+}
+
+@media(min-width:1280px) {
+    * {
+        font-size: 18px;
+        background-color: #a52a2a;
+    }
+    .div-2>input {
+        max-width: 20vw;
+    }
+    .div-2 {
+        flex-direction: row;
+        justify-content: bolder;
+    }
+}
