@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(11, 7, 14, 0.7)), url(./../img/mulancav.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    width: 100%;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+}
+
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    border: none;
+}
+
+.menu-navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.cor-link {
+    color: #a02121ed;
+    text-decoration: underline;
+}
+
+.cor-link:hover {
+    text-decoration: underline;
+    font-size: 115%;
+}
+
+.menu-navegacao__link:hover {
+    background-color: #da0707ed;
+}
+
+.banner__titulo {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main {
+    width: 90%;
+    background: linear-gradient(#f5f5f5dc, rgba(253, 253, 253, 0.6));
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+}
+
+.card-introducao,
+.container-trajetoria,
+.card-gostos {
+    padding: 4%;
+}
+
+.card-introducao__titulo {
+    color: #7a7979;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p,
+.container-trajetoria__paragrafo p {
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.container-texto__imagem {
+    width: 30%;
+}
+
+.container-trajetoria__titulo {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #7a7979;
+}
+
+.card-gostos__titulo {
+    font-size: 25px;
+    color: #7a7979;
+    margin-bottom: 30px;
+}
+
+.container-listas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista {
+    width: 30%;
+    background-color: #070707e1;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #da0707ed;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista h3 {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li {
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before {
+    content: "❤";
+    margin-right: 10px;
+    color: rgb(196, 26, 26);
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background-color: #070707ed;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label,
+input {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input {
+    border: 2px solid #ffffff;
+    background-color: #da0707ed;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-fale-conosco h2 {
+    font-size: 25px;
+    color: #da0707ed;
+    margin-bottom: 20px;
+}
+
+.s2 {
+    color: rgb(196, 26, 26);
+}
+
+@media (max-width:600px) {
+    .menu-navegacao .menu-navegacao__link {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px !important;
+    }
+    .menu a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:370px) {
+    .menu-navegacao .menu-navegacao__link {
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px !important;
+    }
+    .menu a {
+        font-size: 10px;
+    }
+    .menu__logo {
+        font-size: 10px;
+    }
+}
