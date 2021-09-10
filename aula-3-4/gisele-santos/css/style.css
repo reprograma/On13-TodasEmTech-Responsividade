@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(116,44,126,0.5),rgba(167,92,204,0.7)), url(./../img/background.jpg);
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    background-color: #a36f96;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+}
+
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main{
+    width: 100%;
+    background-color: rgb(243,239,239);
+    margin: 0 0;
+    padding: 3% 3%;
+}
+
+.card-introducao, .container-trajetoria, .card-gostos{
+    padding: 4%;
+}
+
+.card-introducao__titulo{
+    color:rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto{
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafo{
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafo p{
+    color: rgb(41,39,39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.container-texto__imagem{
+    width: 30%;
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #502f4c;
+}
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listas{
+    width: 30%;
+    background-color: #A866AD;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.listas:hover{
+    transform: scale(1.1);
+}
+
+.lista__h3{
+    color:#ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "♥";
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}

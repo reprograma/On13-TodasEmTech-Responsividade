@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Aluna {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#" class="menu-navegacao__link">Super Aluna</a></li>
+                <li><a href="#" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#" class="menu-navegacao__link">Fale conosco</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou a super Aluna {Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre o meu mundo</p>
+        </div>
+    </header>
+    <main>
+        <section class="card-introducao">
+            <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafo">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sequi dolor perferendis possimus accusantium harum ea! Dolores consequatur velit rem, esse nemo dolor distinctio sint assumenda magni, est odit excepturi.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quod corrupti nemo, dolores totam aliquid alias vel culpa, vero ipsa nobis nisi veniam libero repellendus nihil sapiente fugiat eos amet.</p>
+                    
+                </div>
+                <img src="./img/menina-globo.png" alt="Ilustração de uma garota segurando um globo"
+                    class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória de vida...
+            </h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minima ut accusamus accusantium aliquid corrupti ipsa, necessitatibus reiciendis assumenda eligendi tempore laudantium ea voluptatem, dolorem officiis optio alias facere expedita!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat minima voluptate omnis error, at ratione facilis! Atque eveniet, cum, corrupti reprehenderit a esse ducimus ipsam cumque qui eos saepe?</p>
+            </div>
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida</h2>
+            <div class="container-listas">
+                <div class="listas">
+                    <h3 class="lista__h3">Amo viajar e tenho uma listinha dos países que quero conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>país 1</li>
+                        <li>país 2</li>
+                        <li>país 3</li>
+                        <li>país 4</li>
+                        <li>país 5</li>
+                    </ul>
+                </div>
+
+                <div class="listas">
+                    <h3 class="lista__h3">Amo ouvir música. Confira as minhas músicas preferidas!</h3>
+                    <ul class="lista__item">
+                        <li>música 1</li>
+                        <li>música 2</li>
+                        <li>música 3</li>
+                        <li>música 4</li>
+                        <li>música 5</li>
+                    </ul>
+                </div>
+
+                <div class="listas">
+                    <h3 class="lista__h3">Amo ler, estes são os meus livros preferidos!</h3>
+                    <ul class="lista__item">
+                        <li>livro 1</li>
+                        <li>livro 2</li>
+                        <li>livro 3</li>
+                        <li>livro 4</li>
+                        <li>livro 5</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Fale conosco</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Maria Silva"><br>
+                    <label for="idade">Digite sua idade:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="110" value="0"><br>
+                    <label for="email">Digite o seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com.br"><br>
+                    <label for="telefone">Digite o seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(xx) 9xxxx-xxxx)">
+                    <br></br>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>     
+                <div>
+                    <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                </div>
+                </fieldset>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Gisele dos Santos - Aula 
+        <a href="https://reprograma.com.br/" target="_blank">{Reprograma}</a> | © Copyright 2021</p>
+    </footer>
+</body>
+</html>
