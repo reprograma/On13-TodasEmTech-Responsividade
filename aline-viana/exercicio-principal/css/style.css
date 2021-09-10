@@ -200,6 +200,10 @@ footer {
 
 @media (min-width: 768px) {
   /* IPAD */
+  .container-texto__imagem {
+    width: 30%;
+    margin: 0px 60px;
+  }
   .lista {
     width: 60vh;
     background-color: #073d69;
@@ -218,18 +222,17 @@ footer {
     color: white;
     display: flex;
     margin: 20px 2px;
-    margin-left:120px;
-
+    margin-left: 120px;
   }
   form input:not(:last-child) {
     width: 45vh;
     height: 5vh;
-    margin-left:120px;
+    margin-left: 120px;
     border-radius: 10px;
     border-color: none;
     font-size: 20px;
   }
-  
+
   form input[type="submit"] {
     background-color: #e5bc30;
     border-color: none;
@@ -237,7 +240,121 @@ footer {
     padding: 8px 18px;
     border-radius: 10px;
     width: 45vh;
-    margin-left:120px;
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .menu {
+    height: 60px;
+  }
+  .menu-nav__link {
+    padding: 0px 50px;
+  }
+  .menu-nav__link:hover {
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+  }
+
+  .background-header {
+    height: 80vh;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .background-header-img {
+    margin: 88px 10px 40px 20px;
+    width: 50%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+
+  #background-header__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #073d69;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 198px 10px 40px 0px;
+  }
+  .background-header__title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .background-header__subtitle {
+    font-size: 15px;
+  }
+
+  .container-form__titulo {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+  }
+  .container-form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #073d69;
+    margin: 0px 50px;
+    text-align: center;
+  }
+  label {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+  }
+  .forms {
+    display: flex;
+    justify-content: space-between;
+  }
+  form input:not(:last-child) {
+    width: 36vh;
+    height: 5vh;
+    border-radius: 10px;
+    border-color: none;
+    font-size: 1rem;
+    margin: 0px 8px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #e5bc30;
+    border-color: none;
+    font-size: 1rem;
+    padding: 8px 1px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: white;
+  }
+
+  .container-listas {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0;
 
   }
+
+  .lista {
+    width: 50vh;
+    background-color: #073d69;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0;
+    
+  }
+  .movieName {
+    font-size: 20px;
+    text-align: center;
+  }
+.background-headerMovie {
+  margin: 0px 32px;
+}
 }
