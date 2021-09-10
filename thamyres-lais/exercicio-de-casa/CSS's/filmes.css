@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-left: 80px;
+    font-size: 2rem;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+}
+
+.menu__logo{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff; 
+    width: 98vw;
+    margin-bottom: 5vw;
+}
+.menu-navegacao{
+    list-style: none;
+    position:absolute;
+    display: flex;
+    top: 2vh;
+    right: 0;
+    width: 101vw;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.introducao__titulo{
+    color: black;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmes-combo1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.filmes-combo1-repertorio__link{
+   list-style: none;
+   text-decoration: none;
+   font-size: 8rem;
+   align-items: center;
+}
+
+.filmes-combo1-repertorio__capa{
+    width: 90vw;
+    max-width:800px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filmes-combo1-repertorio__nome{
+    list-style: none;
+    text-decoration: none;
+    font-size: 4rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+.filmes-combo2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.filmes-combo2__link{
+    list-style: none;
+    text-decoration: none;
+    font-size: 8rem;
+    align-items: center;
+}
+
+.filmes-combo2__capa{
+    width: 90vw;
+    max-width:800px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filmes-combo2__nome{
+    list-style: none;
+    text-decoration: none;
+    font-size: 4rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+
+footer p{
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 100%;
+    height: 5vh;
+}
+
+footer a{
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+@media(min-width:768px){
+.menu-navegacao__link{
+    margin-left: 40px;
+}
+
+.menu{
+    height: 19vh;
+}
+
+.menu__logo{
+    font-size: 2rem;
+}
+
+.menu-navegacao{
+    margin-top: 30px;
+}
+
+.filmes-combo1{
+    display: flex;
+
+}
+
+.filmes-combo2{
+    display: flex;
+}
+
+.filmes-combo1-repertorio__capa{
+    max-width: 500px;
+}
+
+.filmes-combo2__capa{
+    max-width: 500px;
+}
+}
+
+@media(min-width:1280px){
+    .menu__logo{
+        margin-bottom: 11vh;
+    }
+}
