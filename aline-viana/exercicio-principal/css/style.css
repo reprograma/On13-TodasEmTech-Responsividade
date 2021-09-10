@@ -96,7 +96,12 @@ main {
 }
 
 .container-informacoes {
-  
+  flex-direction: row;
+}
+
+address, dd {
+  margin-top: 15px;
+  font-size: 12px;
 }
 
 .container-texto__paragrafos p,
