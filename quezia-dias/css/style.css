@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 77vh;
+    background: linear-gradient(rgba(83, 179, 243, 0.5), rgba(13, 15, 105, 0.7)), url(./../img/qg.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    background-color: #1d89aa;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+}
+
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover {
+    background-color: #052833;
+}
+
+.banner__titulo {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+main {
+    width: 90%;
+    background-color: rgb(243, 239, 239);
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 20px #cccccc;
+}
+
+.card-introducao,
+.container-trajetoria,
+.card-gostos {
+    padding: 4%;
+}
+
+.card-introducao__titulo {
+    color: rgb(70, 70, 180);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p,
+.container-trajetoria__paragrafo p {
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.container-texto__imagem {
+    width: 30%;
+}
+
+.container-trajetoria__titulo {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(70, 70, 180);
+}
+
+.card-gostos__titulo {
+    font-size: 25px;
+    color: rgb(70, 70, 180);
+    margin-bottom: 30px;
+}
+
+.container-listas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
+.lista {
+    width: 90%;
+    background-color: #1d89aa;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5 all;
+    box-shadow: 5px 5px 9px #cccccc;
+    margin-bottom: 3vh;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista h3 {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.lista__item li {
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before {
+    content: "❤";
+    margin-right: 09px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d89aa;
+}
+
+.display-inline div {
+    display: inline;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.display-block div {
+    display: block;
+    width: 100px;
+    background-color: brown;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.display-inline-block div {
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(17, 85, 102);
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 70%;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label,
+input {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input {
+    border: 2px solid #6e6dc2;
+    background-color: #1d89aa;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-fale-conosco h2 {
+    font-size: 25px;
+    color: rgb(101, 101, 218);
+    margin-bottom: 20px;
+}
+
+.card-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width:720px) {
+    /*.container-texto__imagem {
+        flex-direction: column;
+    }
+    .container-listas {
+        width: 100%;
+      /*flex-wrap: wrap;
+        justify-content: space-between;*
+    }*/
+    .container-listas {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+    }
+    .lista {
+        max-width: 35%;
+        min-height: 25%;
+        margin-right: 2%;
+        margin-left: 2%;
+        justify-content: space-between;
+    }
+}
