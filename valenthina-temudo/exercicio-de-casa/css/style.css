@@ -96,11 +96,6 @@
         align-items: center;
     }
 
-    .container-texto__paragrafo {
-        width: 60%;
-        margin-right: 10%;
-    }
-
     .container-texto__paragrafo p,
     .container-trajetoria__paragrafo p {
         color: rgb(41, 39, 39);
@@ -108,14 +103,6 @@
         margin-bottom: 17px;
         text-align: justify;
     }
-
-    .container-texto__imagem {
-        width: 30%;
-        border-radius: 10px;
-        border: 2px solid #fff;
-        box-shadow: 5px 5px 9px rgb(141, 138, 138);
-    }
-
 
     .container-texto__paragrafo ul {
         display: flex;
@@ -171,7 +158,6 @@
 
     .lista {
         width: 30%;
-        max-width: 50%;
         background: linear-gradient(rgb(255, 175, 204), rgb(201, 141, 141));
         border-radius: 10px;
         padding: 16px;
@@ -255,31 +241,72 @@
         margin-bottom: 20px;
     }
 
-    @media (min-width:414px) and (max-width:1024px) {
+    @media(min-width: 414px) and (max-width: 1024px) {
+
+        .menu-navegacao__link {
+            font-size: 15px;
+        }
+
         .banner__titulo,
         .banner__subtitulo {
             text-align: center;
         }
 
         .cabecalho {
-            height:250px;
+            height: 250px;
         }
 
         .card-introducao__titulo,
         .container-trajetoria__titulo,
         .card-gostos__titulo {
+            font-size: 20px;
+        }
+
+        .container-texto__paragrafo p {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .container-trajetoria__paragrafo p {
             font-size: 15px;
         }
 
-        .container-trajetoria__paragrafo p{
-            font-size: 10px;
+        .container-texto__paragrafo ul {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            margin-left: 50px;
         }
 
-        .container-texto__paragrafo p{
-            font-size: 25px;
+        .container-texto__paragrafo ul li img {
+            width: 100%;
         }
 
-        .container-listas{
+        .container-texto__paragrafo ul li a {
+            font-size: 15px;
+            margin: 10px;
+        }
+
+        .container-texto__paragrafo ul li a h3 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .container-listas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+
+        .lista {
+            width: 100%;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .container-texto__paragrafo ul {
             flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
         }
     }
