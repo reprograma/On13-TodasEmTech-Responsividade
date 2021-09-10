@@ -112,4 +112,51 @@ address, dd {
   text-align: justify;
 }
 
+.container-texto__imagem {
+  width: 30%;
+}
+
+
+.container-form {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #073d69;
+  margin: 0px 50px;
+  flex-wrap: wrap;
+}
+.container-form__titulo {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+label {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  margin: 20px 2px;
+}
+form input:not(:last-child) {
+  width: 45vh;
+  height: 5vh;
+  border-radius: 10px;
+  border-color: none;
+  font-size: 2rem;
+}
+input::-webkit-outer-spin-submit,
+input::-webkit-inner-spin-submit {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type="submit"] {
+  background-color: #e5bc30;
+  border-color: none;
+  font-size: 2rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  width: 45vh;
+}
+
+
 
