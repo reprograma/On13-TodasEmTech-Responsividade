@@ -197,3 +197,47 @@ footer {
   padding: 20px;
   background-color: #073d69;
 }
+
+@media (min-width: 768px) {
+  /* IPAD */
+  .lista {
+    width: 60vh;
+    background-color: #073d69;
+    border-radius: 10px;
+    padding: 16px;
+    margin-left: 50px;
+  }
+  .background-headerMovie {
+    width: 38vh;
+    height: 50vh;
+    margin: 2vh 9vh;
+  }
+
+  label {
+    font-size: 25px;
+    color: white;
+    display: flex;
+    margin: 20px 2px;
+    margin-left:120px;
+
+  }
+  form input:not(:last-child) {
+    width: 45vh;
+    height: 5vh;
+    margin-left:120px;
+    border-radius: 10px;
+    border-color: none;
+    font-size: 20px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #e5bc30;
+    border-color: none;
+    font-size: 2rem;
+    padding: 8px 18px;
+    border-radius: 10px;
+    width: 45vh;
+    margin-left:120px;
+
+  }
+}
