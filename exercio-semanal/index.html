@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário-->
+    <meta charset="UTF-8">
+    <title> Super aluna {reprograma} </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="" class="menu__logo">{}</a>
+            <ul class="menu-navegacao">
+                <li><a href="#super-aluna" class="menu-navegacao__link">Ana Claudia</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale conosco</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá,eu sou a super Aluna{Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada?Vem conhecer um pouco sobre o meu mundo</p>
+        </div>
+    </header>
+    <main>
+        <section class="card-introducao" id="super-aluna">
+            <h2 class="card-introucao__titulo">Um pouco sobre o meu mundinho...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Olá, me chamo Ana Claudia Gaspar,uma nata sergipana de 30 anos.</p>
+                    <p>Tenho grande empatia pelo próximo, e isso fez com que eu me tornasse doadora de sangue e médula osséa. Amo a vida, a natureza e os animais. Apaixonada por suculentas e cactos, bem como animes, séries e café :)</p>
+                </div>
+                <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+            </div>
+        </section>
+
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deix eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Formada em Engenharia de Pesca pela UFS e pelo IFS em Técnico de Segurança do Trabalho. Estou em transição de carreira,e a programação foi a área escolhida para essa nova jornada, pois sempre gostei de tecnologia.Ganhei uma bolsa de estudos
+                    da Reprograma e essa oportunidade foi a deixa para que eu me dedicasse a esse novo universo, atualmente sou estudante front-end.</p>
+                <p>Já trabalhei em diversas funções: Reforço escolar, trabalhei com comunidades pesqueiras, personalizados, instrutora particular do office, ensino médio, etc...</p>
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo assistir, e tenho uma listinha incrível de series:</h3>
+                    <ul class="lista__item">
+                        <li>The Big Bang Theory</li>
+                        <li>Sobrenatural</li>
+                        <li>Prison Break</li>
+                        <li>Chicago Fire</li>
+                        <li>House</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo ouvir música.Confira as minhas músicas favoritas:</h3>
+                    <ul class="lista__item">
+                        <li>Photograph - Ed Sheeran</li>
+                        <li>Depois - Marisa Monte </li>
+                        <LI>Garganta - Ana Carolina</LI>
+                        <li>back for good - Gary Barlow </li>
+                        <LI>Ouvi dizer - Melim</LI>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                    <ul class="lista__item">
+                        <li>Biblía</li>
+                        <li>A cabana</li>
+                        <li>O pequeno princípe</li>
+                        <li>Orgulho e preconceito</li>
+                        <li>Por que os homens amam as mulheres poderosas? </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form>
+                <div class="campo-form">
+
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="email">Digite o seu email</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com" required>
+
+                    <label for="telefone">Digite seu telefone</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+                    <label for="mensagem">Digite a sua mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="horario">Qual horário você está disponível?</label>
+                    <select name="horario-disponivei" id="horario">
+                        <option value="manha">Manhã</option> 
+                        <option value="tarde">Tarde</option> 
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label>Gostaria de receber nossas novidades por email?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Ana Claudia Gaspar</p>
+    </footer>
+</body>
+
+</html>
