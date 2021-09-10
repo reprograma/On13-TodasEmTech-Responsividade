@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Aluna {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header>
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{}</a>
+            <ul class="menu-navegacao">
+                <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou a super Aluna {Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre o meu mundo!</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao" id="super-aluna">
+            <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Olá, meu nome é Graziele, nativa da engenharia química descobrindo uma nova profissão na área de
+                        tecnologia, desenvolvedora front-end em formação! Nordestina com orgulho, sou curiosa,
+                        determinada e estou sempre em busca de conhecimento. Amo café, plantinhas, bordar, desenhar e
+                        aprender idiomas.</p>
+                    <p>Em 2021, dei meu primeiro passo e comecei a estudar programação através de cursos onlines
+                        gratuitos, estou aprendendo cada vez mais sobre esse mundo incrível de desenvolvimento e já já
+                        estarei oficialmente no mercado tech!
+                        Nós mulheres podemos tudo e eu acredito que the future is female coders.</p>
+                </div>
+                <img src="./img/planet.png" alt="planet" class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...
+            </h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Sou recém formada e ao longos dos últimos me dediquei aos estudos voltados a área de meio ambiente e
+                    energia, desenvolvi diversas pesquisas cientificas na área de biocombustíveis e biopolímeros, pois
+                    acredito em um mundo sustentável.</p>
+                <p>Mesmo atuando boa parte dos anos em pesquisas e análises em laboratório, sempre fui muito curiosa e
+                    me interessei por diversas áreas também, aprendi francês por conta própria para participar de um
+                    processo seletivo com bolsa de estudos na França, deu certo! Tive a oportunidade de estudar
+                    Engenharia de Processos e Meio Ambiente no INSA-Toulouse, também estagiei na área e viajei 10
+                    países. Em seguida, aprendi inglês, quando voltei para o Brasil, logo começou a pandemia e comecei a
+                    dar aulas particulares de francês e inglês. Em paralelo, conheci a área de densenvolvimento web e
+                    aqui estou eu desenvolvendo websites!</p>
+
+            </div>
+
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar, e tenho uma listinha de quais países ainda quero conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>China</li>
+                        <li>Coréia do Sul</li>
+                        <li>Japão</li>
+                        <li>Egito</li>
+                        <li>Croácia</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                    <ul class="lista__item">
+                        <li>The Scientist - Coldplay</li>
+                        <li>Birds - Imagine Dragons</li>
+                        <li>Mic Drop - BTS </li>
+                        <li>Amour Plastique - VIDEOCLUB</li>
+                        <li>Scandal of Grace - Hillsong</li>
+                    </ul>
+
+                </div>
+                <div class="lista">
+                    <h3>Amo dorama (K-drama), e esses são os meus doramas preferidos:</h3>
+                    <ul class="lista__item">
+                        <li> Crash landing on you</li>
+                        <li>Something in the rain</li>
+                        <li>Startup</li>
+                        <li>It's ok not to be ok</li>
+                        <li>Navillera</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form class="fale-conosco">
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Qual a sua idade?:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite o seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Digite o seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite a dia mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="comidas">Qual a sua comida favorita?</label>
+                    <select name="comidas-que-eu-gosto" id="comidas">
+                        <option value="coxinha">Coxinha</option>
+                        <option value="hamburguer">Hambúrguer</option>
+                        <option value="pizza">Pizza</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div class="social">
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">
+                            Whatsapp </label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">
+                            Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">
+                            E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label> Concorda que você é maravilhosa?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Graziele Ribeiro Santos - Aula {Reprograma} | © Copyright 2021</p>
+    </footer>
+
+</body>
+
+</html>
