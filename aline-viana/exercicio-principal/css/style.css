@@ -4,8 +4,12 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
+  
 }
+body {
+  background-color: rgb(243, 239, 239);
 
+}
 .menu {
   width: 100%;
   background-color: #073d69;
@@ -30,17 +34,17 @@
 }
 
 .background-header {
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-wrap: wrap;
 }
 
 .background-header-img {
-  margin: 80px 100px 40px 100px;
-  width: 82%;
+  margin: 80px 100px 10px 100px;
+  width: 80%;
+  height: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
-  margin-bottom: 50px;
 }
 
 #background-header__text {
@@ -48,15 +52,33 @@
   background-color: #073d69;
   color: white;
   border-radius: 10px;
-  padding: 20px;
-  margin-left: 150px;
+  padding: 20px 60px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+
 }
 
 .background-header__title {
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .background-header__subtitle {
   font-size: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+.card-introducao,
+.container-form,
+.card-gostos {
+  padding: 4%;
+}
+
+.card-introducao__titulo {
+  color: rgb(15, 13, 15);
+  font-size: 30px;
+  margin-bottom: 20px;
 }
