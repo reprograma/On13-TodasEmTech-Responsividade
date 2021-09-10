@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(133, 125, 241, 0.7)), url(./../img/cat-3699032_1920.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    background-color: #c615fc;
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+}
+
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo {
+    color: f#ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover {
+    background: royalblue;
+}
+
+.banner__titulo {
+    color: #5b0263;
+    font-size: 50px;
+    margin-bottom: 1px;
+}
+
+.banner__subtitulo {
+    color: #470258;
+    font-size: 25px;
+}
+
+main {
+    width: 90%;
+    background: rgb(244, 242, 253);
+    border-radius: 10px;
+    margin: 3% 5%;
+}
+
+.card-introducao,
+.container-trajetoria,
+.card-gostos {
+    padding: 2%;
+}
+
+.card-introducao__titulo {
+    color: rgb(53, 3, 70);
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texto__paragrafos {
+    margin-right: 5%;
+}
+
+.container-texto__paragrafos p,
+.container-trajetoria__paragrafo p {
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.container-texto__imagem {
+    width: 100%;
+}
+
+.card-introducao__sub-titulo {
+    font-size: 20px;
+    font-style: oblique;
+    margin-bottom: 10px;
+    color: #420a3c;
+}
+
+.container-trajetoria__titulo {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #420a3c;
+}
+
+.listinha {
+    color: #000000;
+    font-size: 35px;
+    text-align: justify;
+    padding: 25px;
+}
+
+.imagem-canela {
+    display: inline-block;
+    float: left;
+}
+
+.imagem-canela img {
+    width: 400px;
+}
+
+.card-gostos__titulo {
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-lista {
+    display: inline-block;
+    justify-content: space-between;
+    background: slateblue;
+    margin: 0 20px;
+    padding: 80px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+}
+
+.lista {
+    background-color: #bd5cf5;
+    border-radius: 20px;
+    padding: 35px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    margin: 1% 25%;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista h3 {
+    color: #ffffff;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lista__item li {
+    color: #ffffff;
+    margin-bottom: 30px;
+    list-style: none;
+    margin: 2%;
+}
+
+.lista__item li::before {
+    content: "❤";
+    margin-right: 5px;
+}
+
+form {
+    width: 80%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+label,
+input {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input {
+    border: 2px solid #ffffff;
+    background-color: #c615fc;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.card-fale-conosco h2 {
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center; color: #ffffff;
+    padding: 20px;
+    background-color: #c615fc;
+}
+@media (min-width: 800px){
+    .menu {
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+    height: 20%;
+    }
+    .container-texto{
+    display: block;
+    }
+    .imagem-gatos {
+        width: 100%;
+    }
+    .imagem-canela {
+        display: flex;
+        padding: 30px;
+    }
+    }
