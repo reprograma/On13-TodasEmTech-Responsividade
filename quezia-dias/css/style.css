@@ -89,12 +89,12 @@ main {
 }
 
 .container-texto {
-    display: flex;
+    display: block;
     align-items: center;
 }
 
 .container-texto__paragrafos {
-    width: 60%;
+    width: 100%;
     margin-right: 10%;
 }
 
@@ -107,7 +107,7 @@ main {
 }
 
 .container-texto__imagem {
-    width: 30%;
+    width: 50%;
 }
 
 .container-trajetoria__titulo {
@@ -258,5 +258,12 @@ fieldset {
         margin-right: 2%;
         margin-left: 2%;
         justify-content: space-between;
+    }
+    .container-texto {
+        display: flex;
+        width: 100%;
+    }
+    .container-texto__imagem {
+        width: 30%;
     }
 }
