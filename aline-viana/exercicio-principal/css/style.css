@@ -69,6 +69,7 @@ body {
 
 main {
   width: 100%;
+  background-color: rgb(224, 217, 217);
 }
 
 .card-introducao,
@@ -82,3 +83,28 @@ main {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+.container-texto__paragrafos {
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.container-texto__imagem {
+  width: 100%;
+  height: 150px;
+}
+
+.container-informacoes {
+  
+}
+
+.container-texto__paragrafos p,
+.container-form__paragrafo p {
+  color: rgb(41, 39, 39);
+  font-size: 17px;
+  margin-bottom: 17px;
+  text-align: justify;
+}
+
+
