@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Super Aluna {Reprograma}</title>
+            <link rel="shortcut icon" href="./img/caveira-mexicana (1).png" type="image/x-icon">
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+            <header class="cabecalho">
+
+                <nav class="menu">
+                    <a href="" ><img class="menu__logo" src="./img/caveira-mexicana (1).png" alt="Logo"></a>
+                    <ul class="menu-navegacao">
+                        <li><a href="#" class="menu-navegacao__link">Sobre mim</a></li>
+                        <li><a href="#" class="menu-navegacao__link">Trajetória</a></li>
+                        <li><a href="#" class="menu-navegacao__link">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+                <div class="banner" >
+                    <h1 class="banner__titulo" >Olá, eu sou a super Aluna {Reprograma}</h1>
+                    <p class="banner__subtitulo" >Vem conhecer um pouco sobre o meu mundo</p> 
+                </div>
+
+            </header>
+            <main>
+                <section class="card-introducao">
+                    <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+                    <div class="container-texto">
+                        <div class="container-texto__paragrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque rerum alias nihil, recusandae odio, ex odit deserunt adipisci tenetur qui reprehenderit facere eveniet eaque, cumque quibusdam veritatis a incidunt?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente illum et recusandae odio sed officia fugiat quas, magni doloremque tenetur laboriosam atque id. Alias autem hic amet eum delectus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam dignissimos voluptate repellendus? Neque quia esse similique odio, magnam pariatur nihil nobis harum temporibus? Qui sapiente quasi laudantium voluptates cumque.</p>
+                        </div>
+                        <img src="./img/Frida.jpeg" alt="Frida Kahlo" class="container-texto__imagem">
+                    </div>
+                </section>
+                <section class="container-trajetoria">
+                    <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+                    <div class="container-trajetoria__paragrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa, sequi, doloribus totam quo ipsa laborum, alias error cumque nisi temporibus? Laborum ea dignissimos neque adipisci tenetur fugiat nostrum optio?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus aspernatur, esse, doloremque animi nihil vel quia eum nulla voluptatibus in temporibus? Doloribus illum, sequi ea aliquid nisi ratione voluptate?</p>
+        
+                    </div>
+
+                </section>
+                <section class="card-gostos">
+                    <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                    <div class="container-listas">
+                        <div class="lista">
+                            <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                            <ul class="lista__item">
+                                <li>pais 1</li>
+                                <li>pais '2</li>
+                                <li>pais 3</li>
+                                <li>pais 4</li>
+                                <li>pais 5</li>
+                            </ul>
+                        </div>
+                        <div class="lista">
+                            <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                            <ul class="lista__item">
+                                <li>música 1</li>
+                                <li>música 2</li>
+                                <li>música 3</li>
+                                <li>música 4</li>
+                                <li>música 5</li>
+                            </ul>
+                        </div>
+                        <div class="lista">
+                            <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                            <ul class="lista__item">
+                                <li>Livro 1</li>
+                                <li>Livro 2</li>
+                                <li>Livro 3</li>
+                                <li>Livro 4</li>
+                                <li>Livro 5</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="card-form">
+                    <h2>Fale Conosco</h2>
+                    <form>
+                        <div class="campo-form">
+                            <label for="nome">Nome completo:</label>
+                            <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo">
+                            
+                            <label for="idade">Qual a sua idade?:</label>
+                            <input id="idade" type="number" name="idade" min="0" max="120" value="0">
+                            
+                            <label for="email">Digite o seu email:</label>
+                            <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                            <label for="telefone">Digite o seu telefone:</label>
+                            <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                            <label for="mensagem">Digite a dia mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                        </div>
+                        <div class="form-botao">
+                            <input type="submit" value="Enviar formulário">
+                        </div>
+                    </form>
+                </section>
+                
+            </main>
+            <footer>
+                <p>Site desenvolvido por Aida Figueiredo - Aula {Reprograma} | © Copyright 2021</p>
+            </footer>
+            
+        </body>
+    </html>
