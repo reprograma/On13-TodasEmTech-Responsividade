@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Aluna {Reprograma}</title>
-    <link rel="icon" type="image/png" href="./">
+    <link rel="icon" type="image/png" href="./img/coracao-roxo.jpg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -82,10 +82,10 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="card-form">
             <h2>Fale conosco</h2>
             <form>
-                <div>
+                <div class="campo-form">
                     <label for="nome">Nome completo:</label>
                     <input id="nome" type="text" name="nome" placeholder="Maria Silva"><br>
                     <label for="idade">Digite sua idade:</label>
@@ -93,23 +93,25 @@
                     <label for="email">Digite o seu email:</label>
                     <input id="email" type="email" name="email" placeholder="seuemail@dominio.com.br"><br>
                     <label for="telefone">Digite o seu telefone:</label>
-                    <input id="telefone" type="tel" name="telefone" placeholder="(xx) 9xxxx-xxxx)">
-                    <br></br>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(xx) 9xxxx-xxxx)"><br>
+                    <label for="mensagem">Digite a sua mensagem:</label><br><textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea><br> 
+                    </br>
                 </div>
                 <fieldset>
-                    <legend>Como podemos entrar em contato com você?</legend>
+                    <legend>Como podemos entrar em contato com você?</legend><br>
                     <div>
                         <input type="radio" value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
                         <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
-                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
-                    </div>     
-                <div>
-                    <input type="checkbox" id="maravilhosa" name="maravilhosa" value="maravilhosa">
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label><br>
+
+                    </div>  
+                </fieldset>   
+                <div class="checkbox">
+                    <br><input type="checkbox" id="maravilhosa" name="maravilhosa" value="maravilhosa">
                     <label for="maravilhosa">Concorda que você é maravilhosa?</label><br>
                 </div>
-                </fieldset>
                 <div class="form-botao">
-                    <input type="submit" value="Enviar formulário">
+                    <br><input type="submit" value="Enviar formulário">
                 </div>
             </form>
         </section>
