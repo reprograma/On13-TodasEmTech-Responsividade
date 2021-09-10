@@ -4,11 +4,9 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
-  
 }
 body {
   background-color: rgb(243, 239, 239);
-
 }
 .menu {
   width: 100%;
@@ -28,7 +26,7 @@ body {
 .menu-nav__link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
   margin: 60px;
 }
@@ -55,7 +53,6 @@ body {
   padding: 20px 60px;
   margin-left: 100px;
   margin-bottom: 40px;
-
 }
 
 .background-header__title {
@@ -95,15 +92,6 @@ main {
   height: 150px;
 }
 
-.container-informacoes {
-  flex-direction: row;
-}
-
-address, dd {
-  margin-top: 15px;
-  font-size: 12px;
-}
-
 .container-texto__paragrafos p,
 .container-form__paragrafo p {
   color: rgb(41, 39, 39);
@@ -115,7 +103,6 @@ address, dd {
 .container-texto__imagem {
   width: 30%;
 }
-
 
 .container-form {
   padding: 40px;
@@ -132,7 +119,7 @@ address, dd {
 }
 
 label {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   display: flex;
   margin: 20px 2px;
@@ -142,7 +129,7 @@ form input:not(:last-child) {
   height: 5vh;
   border-radius: 10px;
   border-color: none;
-  font-size: 2rem;
+  font-size: 20px;
 }
 input::-webkit-outer-spin-submit,
 input::-webkit-inner-spin-submit {
@@ -158,5 +145,55 @@ form input[type="submit"] {
   width: 45vh;
 }
 
+.card-gostos__titulo {
+  font-size: 25px;
+  color: #20171f;
+  margin-bottom: 30px;
+}
 
+.container-listas {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.lista {
+  width: 60vh;
+  background-color: #073d69;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 50px;
+}
+
+.lista h3 {
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sinopse,
+.sinopseMovie,
+.movieName,
+footer {
+  color: white;
+}
+.movieName {
+  font-size: 20px;
+  text-align: center;
+}
+.sinopseMovie {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.background-headerMovie {
+  width: 38vh;
+  height: 50vh;
+  margin: 2vh 6vh;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #073d69;
+}
