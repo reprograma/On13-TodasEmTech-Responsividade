@@ -119,6 +119,7 @@ main{
 
 .listas{
     width: 30%;
+    flex-direction: column;
     background-color: #A866AD;
     border-radius: 10px;
     padding: 16px;
