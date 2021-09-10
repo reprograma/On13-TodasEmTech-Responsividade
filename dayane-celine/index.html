@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--Aqui vai ser incluída informações visíveis ao usuário-->
+ <header class="cabecalho">
+    <nav class="menu">
+        <a href="" class="menu__logo">{DC}</a>
+        <ul class="menu-navegacao">
+            <li><a href="#"class="menu-navegacao__link">Super Aluna</a></li>
+            <li><a href="#"class="menu-navegacao__link">Trajetória</a></li>
+            <li><a href="#"class="menu-navegacao__link">Fale Conosco</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <h1 class="banner__titulo">Olá, eu sou a super Day - Aluna {Reprograma}</h1>
+        <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre meu mundo</p>
+
+    </div>
+</header>
+<main>
+    <section class="card-introducao">
+        <h2 class="card-introducao__titulo">Um pouco sobre meu mundinho...</h2>
+        <div class="container-texto">
+            <div class="container-texto__paragrafos">
+            <p>Dayane Celine, 22 anos prestes a completar mais um aniversário no próximo dia 13, sou casada a três meses e tenho dois irmãos.</p>
+            <p> Do meu ensino médio até poucos meses atras eu nunca tive em mente uma carreira certa a seguir, mas enfim encontrei a {Reprograma} e 
+                me encantei pela tecnologia!</p>
+              <p>Tenho grandes planos para meu futuro, e hoje o maior deles é me tornar uma desenvolvedora Front-End muito bem capacitada.
+              </p>
+        </div>
+        <img src="../imagens/dayane bp.jpg" alt="Dayane Celine" class="container-texto__imagem">
+
+    </section>
+    <section class="container-trajetoria" id="trajetoria">
+        <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetoria nessa vida...</h2>
+        <div class="container-trajetoria__paragrafo">
+            <p> Minha carreira profissional... </p>
+            <p>Meu inicio no mercado de trabalho começou com uma opotunidade do programa Jovem Aprendiz, ingressei na indústria exercendo a função de aprendiz administrativo, 
+                com um pouco mais de um ano de atuação fui promovida, e assim pude ocupar a vaga por mais um ano e alguns meses, até entrar para a grande estátisca 
+                das pessoas desempregadas do país, então foi ai que iniciei minha busca por conhecimento e capacitação para a área de tecnologia 
+            
+            </p>
+        </div>
+    </section>
+    <section class="card-gostos">
+        <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+        <div class="container-listas">
+            <div class="lista">
+                <h3> Amo filmes, veja quais os meus favoritos:
+                </h3>
+
+                <ul class="lista__item">
+                    <li>Querido Jhon</li>
+                    <li>Vigadores</li>
+                    <li>Iron Man</li>
+                    <li>A Guerra do Amanhã</li>
+                    <li>Wall-e</li>
+                </ul>
+            </div>
+            <div class="lista">
+                <h3>Amo ouvir música, Confira as preferidas do momento:</h3>
+                <ul class="lista__item">
+                    <li>Lua</li>
+                    <li>Plano Perfeito</li>
+                    <li>Por Causa Dela</li>
+                    <li>Restrinção Sentimental</li>
+                    <li>Desbloqueado</li>
+                </ul>
+            </div>
+            <div class="lista">
+                <h3>Amo assistir, e essas são as minhas séries favoritas:</h3>
+                <ul class="lista__item">
+                    <li>Grey's Anatomy</li>
+                    <li>Vis a Vis</li>
+                    <li>Orfã Black</li>
+                    <li>Ilha de Ferro</li>
+                    <li>O Conto da Aia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="card-fale-conosco" id="fale-conosco">
+        <h2>Fale conosco !</h2>
+        <form>
+            <div class="campo-form">
+                <label for="nome">Nome completo:</label>
+                <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                <label for="idade"> Qual a sua idade?:</label>
+                <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                <label for="email">Digite o seu email:</label>
+                <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Digite o seu telefone:</label>
+                <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Digite o sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                <label for="comidas">Qual a sua comida favorita</label>
+                <select name="comidas-que-eu-gosto" id="comidas">
+                    <option value="coxinha">Coxinha</option>
+                    <option value="Hamburguer">Hamburguer</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Como podemos entrar em contato voce?</legend>
+                <div>
+                    <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                    <input type="radio" value="email2" name="contato" id="email2"><label for="email2">E-mail</label>
+
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" checked><label>Concorda que vc é maravilhosa?</label>
+
+            </div>
+            <div class="form-botao">
+                <input type="submit" value="Enviar formulário">
+            </div>
+
+        </form>
+        
+    </section>
+</main>
+<footer>
+    <p>Site desevenvolvido por Dayane Celine - Aula {Reprograma} | © Copyright 2021 </p>
+</footer>
+</body>
+</html>

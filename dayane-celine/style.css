@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16;
+    font-family: 'PT Serif', serif;
+}
+.cabecalho{
+    width: 100%;
+    height: 80vh;
+    background: url(../imagens/madeira\ color.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    background-color: black;
+    display: flex; 
+    justify-content:space-between; 
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position:fixed;
+} 
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover{
+    background-color: rgba(236, 191, 75, 0.973);
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.main{
+    width: 90%;
+    background: linear-gradient(rgba(255,251,255,0.5) rgba(236, 191, 75,));
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+}
+
+.card-introducao, .container-trajetoria, .card-gostos{
+    padding: 5%;
+}
+
+.card-introducao__titulo{
+    color: rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.container-texto{
+    display: flex;
+    align-items: center;
+
+}
+
+.container-texto__paragrafos{
+    width: 60%;
+    max-width: 425px;
+    margin-right: 10%;
+
+}
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+    color: rgb(41,39,39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+
+}
+.container-texto__imagem{
+    width: 10rem;
+    
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: gray;
+
+}
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+.container-listas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.lista{
+    width: 30%;
+    background-color: rgba(236, 191, 75, 0.973);
+    border-radius: 10px;
+    padding: 16px;
+    transition: 00.5s all;
+    box-shadow: 5px 5px 9px #cccc;
+    
+    
+}
+.lista:hover{
+    transform: scale(1.1);
+}
+.lista h3{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.lista__item li{
+    color: black;
+    margin-bottom: 10px;
+    list-style: none;
+
+}
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+
+}
+footer{
+    text-align: center;
+    color: #ffffff;
+    padding: 12px;
+    background-color: black;
+
+}
+.display-inline div{
+    display: inline-flex;
+    background-color: olive;
+    width: 100px;
+    height: 100px;
+
+}
+.display-block div{
+    display: block;
+    width: 100px;
+    background-color: brown;
+    margin-bottom: 20px;
+    height: 100px;
+
+}
+.display-inline-block div{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(1,85,102);
+    margin-bottom: 20px;
+    height: 100px;
+
+}
+.campo-form{
+    display: flex;
+    flex-direction: column;
+
+}
+form{
+    width: 50%;
+    border: 2px solid black;
+    
+    border-radius: 10px;
+
+}
+label, input{
+    margin-bottom: 10px;
+}
+fieldset{
+    border: 2px solid #e6c403;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #e6c403;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
