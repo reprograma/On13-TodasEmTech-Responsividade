@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    background: url(./../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    width: 100%;
+    background-color: #1b1041;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.banner {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover {
+    color: #a36f9c;
+}
+
+.banner__titulo {
+    color: #ffffff;
+    font-size: 75px;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.banner__subtitulo {
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif
+}
+
+body {
+    background: linear-gradient(to top, hsl(326, 80%, 90%), #ffe2f1);
+}
+
+main {
+    width: 90%;
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+    background: #ffffff;
+}
+
+.card-introducao, .container-trajetoria, .card-gostos {
+    padding: 2%;
+    font-family: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-introducao__titulo {
+    color: #1b1041;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos {
+    width: 70%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 17px;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.container-texto__imagem {
+    width: 20%;
+}
+
+.container-trajetoria__titulo {
+    color: #1b1041;
+    font-size: 32px;
+    margin-bottom: 40px
+}
+
+.card-gostos__titulo {
+    font-size: 32px;
+    color: #1b1041;
+    margin-bottom: 30px;
+}
+
+.container-listas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: wrap;
+}
+
+.lista {
+    background-color: #ffe2f1;
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+    color: #1b1041;
+    margin-right: 2rem;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista h3 {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before {
+    content: "❤";
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1041;
+    color: #ffffff;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label, input {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input {
+    border: 2px solid #ffffff;
+    background-color: #1b1041;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-botao input:hover {
+    background: linear-gradient(#4c2eb8, #1b1041);
+}
+
+.card-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-fale-conosco h2 {
+    font-size: 25px;
+    color: #1b1041;
+    margin: 40px;
+}
+
+/*Mobile Query*/
+
+@media (min-width:320px) and (max-width:480px) {
+    .banner__titulo {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    .container-texto__imagem {
+        display: none;
+    }
+    .container-texto {
+        width: 100%;
+        justify-content: center;
+    }
+    .banner__subtitulo {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.7rem;
+    }
+    ul.menu-navegacao {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-navegacao__link {
+        font-size: 0.66rem;
+    }
+    .menu__logo {
+        font-size: 1rem;
+        margin-right: 1.2rem;
+    }
+    .card-introducao__titulo, .container-trajetoria__titulo, .card-gostos__titulo {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .container-texto__paragrafos p {
+        font-size: 0.8rem;
+        text-align: justify;
+        width: 100%;
+        line-height: 1.4rem;
+        margin-left: 1rem;
+    }
+    .container-trajetoria__paragrafo p {
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.4rem;
+        margin: 0 2rem;
+    }
+    .container-listas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lista__item li, .lista h3 {
+        font-size: 0.9rem;
+    }
+    .lista {
+        margin: 0 1rem 2rem 1rem;
+    }
+    legend, fieldset, label, input, .form-botao {
+        font-size: 0.8rem;
+    }
+    #nome, #idade, #comidas, #telefone, #email, #mensagem, .social {
+        font-size: 0.7rem;
+    }
+    legend {
+        margin-bottom: 0.8rem;
+    }
+    .form-botao {
+        margin-top: 1.2rem;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/*Tablet Query*/
+
+@media (min-width:481px) and (max-width:800px) {
+    .banner__titulo {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    .container-texto__imagem {
+        display: none;
+    }
+    .container-texto {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .banner__subtitulo {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0.7rem;
+    }
+    ul.menu-navegacao {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+    .menu-navegacao__link {
+        font-size: 1.2rem;
+    }
+    .menu__logo {
+        font-size: 1rem;
+        margin-right: 1.2rem;
+    }
+    .card-introducao__titulo, .container-trajetoria__titulo, .card-gostos__titulo {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .container-texto__paragrafos p {
+        font-size: 1rem;
+        text-align: justify;
+        width: 100%;
+        line-height: 1.4rem;
+        margin-left: 1.5rem;
+    }
+    .container-trajetoria__paragrafo p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.4rem;
+        margin: 0 2rem;
+    }
+    .container-listas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-left: 6rem;
+    }
+    .lista__item li, .lista h3 {
+        font-size: 0.9rem;
+    }
+    .lista {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+
+/*tablet query*/
+
+@media (min-width:881px) and (max-width:991px) {
+    .banner__titulo {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+    .container-texto__imagem {
+        display: flex;
+    }
+    .container-texto {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .banner__subtitulo {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 0.7rem;
+    }
+    .container-listas {
+        display: flex;
+        width: 100%;
+    }
+    .lista__item li, .lista h3 {
+        font-size: 0.9rem;
+    }
+    .lista {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
