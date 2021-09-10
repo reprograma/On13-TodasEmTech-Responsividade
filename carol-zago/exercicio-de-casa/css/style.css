@@ -1,0 +1,410 @@
+:root {
+    --fonte: 18px;
+    --cor1: #f9f9f9;
+    --cor2: #dddddd;
+    --cor3: #999999;
+    --cor4: #f0b0d0;
+    --cor5: #4f1964;
+    --cor6: #703c70;
+    --cor7: #e7afe7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    font-size: var(--fonte);
+}
+
+body {
+    background-color:  var(--cor2);
+}
+
+nav {
+    /* 1.5rem vai pegar uma vez e meia de 18px que foi definido lá em cima */ 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: var(--cor6);   
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    /* Posso colocar assim ou float: right no .menu
+    display: flex;
+    justify-content: space-between; */
+
+    border-bottom: 2px solid var(--cor4);
+}
+
+.logotipo {
+    font-size: 1.2rem;
+    padding-left: 2%;
+    display: inline-block;
+    color: var(--cor1); 
+}
+
+.menu {
+    padding-right: 5%;    
+    float: right;
+}
+
+.menu a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--cor1); 
+    padding: 8px 15px;
+}
+
+/* Ao passar o mouse em cima */
+.menu a:hover {
+    background-color: var(--cor4);
+    opacity: 0.6;
+    color: var(--cor5);
+    transition: 0.3s;
+}
+
+.conteudo {    
+    width: 100%;
+    margin: auto;
+    margin-bottom: 65px; 
+    background-color: #999999;
+    /* min-height: 400px; */
+    margin-top: 75px;
+}
+
+.banner {
+    height: 75vh; 
+    background: linear-gradient(#4b194b80, #a75cccb3), url(./../img/background.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid var(--cor4);
+}
+
+.banner h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    color: var(--cor1);
+}
+
+.banner p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor1);
+    font-size: 1.2rem;
+}
+
+main {
+    width: 90%;
+    margin: 3% 5%;
+    background: linear-gradient(rgba(161, 147, 161, 0.5), rgba(199,100,216,0.6));
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--cor5);
+}
+
+.introducao, .trajetoria {
+    width: auto;
+    padding: 4%;
+    justify-content: center;
+}
+
+.trajetoria{
+    margin-top: -40px;
+}
+
+.introducao h2, .trajetoria h2, .gostos h2 {
+    color: var(--cor5);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.container-introducao p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    border: 1px solid var(--cor5);
+}
+
+.container-trajetoria p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 20px 20px;
+    overflow: hidden;
+    background-color: var(--cor7);
+    border-radius: 5px;
+    border: 1px solid var(--cor5);
+}
+
+.gostos {
+    padding: 4%;
+    margin-top: -60px;
+}
+
+.container-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista {
+    width: 30%;
+    background-color: var(--cor6);
+    border-radius: 5px;
+    border: 2px solid var(--cor7);
+    padding: 15px;
+    transition: 0.3s all;
+    box-shadow: 5px 5px 9px var(--cor3);
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista h3 {
+    color: var(--cor1);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-lista li {
+    color: var(--cor4);
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.item-lista li::before {
+    content: "❤";
+    margin-right: 10px;
+}
+
+.fale-conosco {
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 70%;
+    border: 2px solid var(--cor4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input {
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border: 1px solid var(--cor5);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input {
+    border: 2px solid var(--cor1);
+    background-color: var(--cor5);
+    color: var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fale-conosco h2 {
+    color: var(--cor5);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: var(--cor4);
+    background-color: var(--cor6);
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+/* Media Queries */
+/* Extra small (xs): Smartphone (portrait - retrato) */
+@media (min-width: 350px) {
+    nav {
+        background-color: #a80b0b;
+    }
+    
+    .menu a {
+        font-size: 1.2rem;
+    }  
+
+    .banner {
+        margin-top: -30px;
+    }
+
+    
+    /* .gostos {
+        padding: 8%;
+    } */
+    
+    .container-lista {
+        width: 90%;
+        margin-top: 25px;
+        display: inline-table;
+    }
+
+    .lista {
+        width: 90%;
+        justify-content: center;
+    }
+    .fale-conosco {
+        padding-bottom: 50px;   
+    }
+
+    form {
+        width: 80%; 
+    }
+
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    nav {
+        background-color: #141452;
+    }
+
+    .logotipo, .menu a {
+        font-size: 1.2rem;
+    }  
+
+    .banner {
+        margin-top: -30px;
+    }
+
+    .gostos {
+        padding: 6%;
+    }
+    
+    .container-lista {
+        width: 100%;
+        margin-top: 25px;
+        display: inline-table;
+    }
+
+    .lista {
+        width: 90%;
+        justify-content: center;
+    }
+    .fale-conosco {
+        padding-bottom: 50px;   
+    }
+
+    form {
+        width: 90%; 
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    nav {
+        background-color: #d6d62c;
+    }
+
+    .logotipo, .menu a {
+        font-size: 1.2rem;
+    }  
+
+    .banner {
+        margin-top: -30px;
+    }
+    .fale-conosco {
+        padding-bottom: 50px;   
+    }
+
+    form {
+        width: 90%; 
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .form-botao {
+        font-size: 2rem;
+        width: 30%;
+        text-align: center;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    nav {
+        background-color: #0e4b0e;
+    }
+    
+    .banner {
+        margin-top: -30px;
+    }
+
+    main {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .fale-conosco {
+        padding-bottom: 50px;   
+    }
+
+    form {
+        width: 90%; 
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Extra Large (xl): Computador */
+@media (min-width: 1200px) {
+    nav {
+        background-color: #9b1379;
+    }
+}
+
