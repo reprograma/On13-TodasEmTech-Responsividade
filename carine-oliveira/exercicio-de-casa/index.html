@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Aluna {Reprograma}</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{c}</a>
+            <ul class="menu-navegacao">
+                <li class="menu-navegaçao__item"><a href="#introducao" class="menu-navegacao__link">Home</a></li>
+                <li class="menu-navegacao__sobre"><a href="#" class="menu-navegacao__link">Sobre</a></li>
+                <li class="menu-navegacao__serviços"><a href="#" class="menu-navegacao__link">Serviços</a></li>
+                <li><a href="#" class="menu-navegacao__link">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou a super aluna Carine Oliveira da {Reprograma} !</h1>
+            <p class="banner__subtitulo">Vem conhecer um pouco sobre o meu mundo</p>
+        </div>
+
+    </header>
+    <main>
+        <section id="introducao" class="card-introducao">
+
+            <h2 class="card-introducao__titulo">Um pouco sobre o meu mundo</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Nascida na Bahia e atualmente morando em São Paulo, tenhoa 21 anos, sou do signo de peixes. Filha de uma baiana arretada com um maranhense, e irmã caçula de três irmãos ( duas mulheres e um homem). </p>
+                    <p>Sempre fui uma menina apaixonada por conhecimento e pessoas. Nova na tecnologia me encantei por desenvolvimento web, atualmente estudando Front-end na {Reprograma} turma 13.</p>
+                    <p>Tenho muita curiosidade na vida, por isso gosto de tudo um pouco, sempre estou aprendendo algo novo. Logo abaixo mostrarei um pouco dos meus interesses.</p>
+                </div>
+                <img src="./img/carine-eu.jpeg" alt="Carine" class="container-texto__imagem">
+            </div>
+        </section>
+
+        <section class="container-trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Conclui meu ensino médio em 2018 e desde então venho tentando me descobrir, e parece que finalmente me encontrei na tecnologia. Acredito que devo agradecer os algoritmos do Youtube que me recomendaram um video da desenvolvedrora Rafaella
+                    Ballerini, no qual ela ensina a criar um formulário apenas com HTML e CSS e foi a partir desse ponto que me interessei pelo o mundo dos códigos, especificamente na área de desenvolvimento web.</p>
+                <p>Busquei saber mais e acabei conhecendo a Reprograma, me escrevi e consegui entrar na turma "On 13 Todas Em Tech de 2021". Estou encarando mais uma aventura, encantada por tantas possibilidades e caminhos dentro da área de tecnologia, não
+                    canso de aprender mais sobre esse universo. </p>
+
+            </div>
+
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja alguns dos meus interesses </h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar e tenho uma listinha de países que pretendo conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>Nova Zelândia</li>
+                        <li>Espanha</li>
+                        <li>Canadá</li>
+                        <li>República Tcheca</li>
+                        <li>Noruega</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3> Músicas favoritas do momento:</h3>
+                    <ul class="lista__item">
+                        <li>New Light - John Mayer</li>
+                        <li>Zé Canjica - Jorge Ben Jor</li>
+                        <li>Misery Business - Paramore </li>
+                        <li>Oi - Lagum</li>
+                        <li>Purity - Asap Rocky</li>
+                    </ul>
+
+                </div>
+                <div class="lista">
+                    <h3> Livros preferidos:</h3>
+                    <ul class="lista__item">
+                        <li>O Alquimista</li>
+                        <li>O Estraordinário</li>
+                        <li>A Cabana </li>
+                        <li>É assim que Acaba</li>
+                        <li>A culpa é das estrelas</li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Qual a sua idade?:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite o seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Digite o seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite a dia mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="comidas">Qual a sua comida favorita?</label>
+                    <select name="comidas-que-eu-gosto" id="comidas">
+                                <option value="coxinha">Coxinha</option>
+                                <option value="hamburguer">Hambúrguer</option>
+                                <option value="pizza">Pizza</option>
+                            </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Carine Oliveira - Aula {Reprograma} | © Copyright 2021</p>
+
+        <div class="caixa-links">
+            <a class="links" href="https://www.linkedin.com/in/carine-oliveira27/" target="blank">
+                <img class="icon" src="./img/in (1).png" alt="Linkedin">
+            </a>
+
+            <a class="links" href="https://github.com/carinee" target="blank">
+                <img class="icon" src="./img/github (1).png" target="blank">
+            </a>
+
+            <a class="links" href="https://www.facebook.com/carine.oliveira.7359" target="Facebook">
+                <img class="icon-face" src="./img/facebook (1).png" target="facebook">
+
+            </a>
+
+            <a class="links" href="https://twitter.com/slcarineex" target="blank">
+                <img class="icon" src="./img/twitter (1).png" target="blank">
+            </a>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
