@@ -1,0 +1,554 @@
+/* para a semana de responsividade, foi feito em cima do css original feito na semana anterior de HTML/CSS, so adicionei os media queries seguindo o mobile first, quando chega em 1024px volta para css original, com apenas algumas alterações. */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    background-color: #a36f9c;
+    display: flex; 
+    justify-content:space-between; 
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+} 
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px; 
+}
+
+.menu-navegacao__link:hover{
+    background-color: #995d92;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+main{
+    width: 90%;
+    background: linear-gradient(rgba(255,251,255, 0.5), rgba(199,100,216,0.6));
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #cccccc;
+}
+
+.card-introducao, .container-trajetoria, .card-gostos{
+    padding: 4%;
+}
+
+.card-introducao__titulo{
+    color: rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos {
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.container-texto__imagem{
+    width: 30%;
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #502f4c;
+}
+
+
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom:20px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista{
+    width: 30%;
+    background-color: #A866AD;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #915374;
+}
+
+.lista:hover{
+    transform: scale(1.1);
+}
+
+.lista h3{
+    color: #ffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius:10px;
+    border: none;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffff;
+    background-color: #502f4c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom:20px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #a36f9c;
+}
+
+/* aqui começa o css mobile-first */
+/* --------------------------------------------------------------------- */
+
+@media (min-width:320px) and (max-width: 767px){
+    
+    .cabecalho{
+        width: 100%;
+        max-width: 100%;
+        background-size: 100% 100%;;
+        height: 45vh; 
+    }
+
+    .menu{
+        height: 80px;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .menu-navegacao__link{
+        font-size: 1rem;
+    }
+
+    .banner__titulo{
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .banner__subtitulo{
+        font-size: 14px;
+    }
+
+    .card-introducao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-introducao__titulo{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .container-texto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto__paragrafos {
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    .container-texto__paragrafos p, .container-trajetoria__paragrafo p {
+        font-size: 12px;
+    }
+
+    .container-texto__imagem {
+        width: 35%;
+    }  
+    
+    .container-trajetoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-trajetoria__titulo{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .container-trajetoria__paragrafo {
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    .card-gostos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-gostos__titulo{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        margin-left: 15px;
+
+    }
+    
+    .container-listas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .lista{
+        width: 90%;
+        background-color: #A866AD;
+        border-radius: 10px;
+        padding: 16px;
+        transition: 0.5s all;
+        box-shadow: 5px 5px 9px #915374;
+        margin: 10px 5px;
+    }
+
+    .lista h3{
+        font-size: 0.9rem;
+    }
+
+    .lista__item li{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+
+    .card-fale-conosco h2{
+        font-size: 1rem;
+    }    
+
+    label, input, textarea, select, option{
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .div-contatos{
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .input-field{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-field input, label{
+        margin-left: 10px;
+    }
+
+    .form-botao{
+        margin-top: 10px;
+    }
+
+    .form-botao input{
+        font-size: 0.9rem;
+    }    
+
+    footer > p{
+        font-size: 0.9rem;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .cabecalho{
+        width: 100%;
+        max-width: 100%;
+        /* background-size: 100% 100%; */
+        height: 45vh; 
+    }
+
+    .banner__titulo{
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .banner__subtitulo{
+        font-size: 1.5rem;
+    }
+
+    .card-introducao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-introducao__titulo{
+        font-size: 1.8rem;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .container-texto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto__paragrafos {
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    .container-texto__paragrafos p, .container-trajetoria__paragrafo p {
+        font-size: 1.3rem;
+    }
+
+    .container-texto__imagem {
+        width: 35%;
+    }  
+    
+    .container-trajetoria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-trajetoria__titulo{
+        font-size: 1.8rem;
+        margin-left: 45px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .container-trajetoria__paragrafo {
+        width: 80%;
+        margin-right: 5%;
+    }
+
+    .card-gostos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-gostos__titulo{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        /* margin-left: 30px; */
+
+    }
+
+    .container-listas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .lista{
+        width: 90%;
+        background-color: #A866AD;
+        border-radius: 10px;
+        padding: 16px;
+        transition: 0.5s all;
+        box-shadow: 5px 5px 9px #915374;
+        margin: 10px 5px;
+    }
+
+    .lista h3{
+        font-size: 1.2rem;
+    }
+
+    .lista__item li{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        list-style: none;
+    } 
+
+    .card-fale-conosco h2{
+        font-size: 2rem;
+    }    
+
+    label, input, textarea, select, option{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .div-contatos{
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .input-field{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-field input, label{
+        margin-left: 10px;
+    }
+
+    .form-botao{
+        margin-top: 10px;
+    }
+
+    .form-botao input{
+        font-size: 0.9rem;
+    }    
+
+    footer > p{
+        font-size: 1rem;
+    }
+}
+
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 1024px){
+
+
+.lista h3{
+    font-size: 1.2rem;
+}
+
+.lista__item li{
+    font-size: 1rem;
+    list-style: none;
+} 
+
+label, input, textarea, select, option{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.form-botao input{
+    font-size: 1.2rem;
+}    
+
+footer > p{
+    font-size: 1.2rem;
+}
+
+}

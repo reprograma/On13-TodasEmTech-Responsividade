@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Aluna {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou a Anne Pinho {Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada?</p>
+            <p class="banner__subtitulo">Vem conhecer um pouco sobre o meu mundo.</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao" id="super-aluna">
+            <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Natural de Tefé, interior do Amazonas, cursando faculdade de Sistemas de Informação na capital
+                        Manaus. Estou em transição de carreira, muito focada e cada vez mais encantada com o universo da
+                        Tecnologia.</p>
+                    <p>Gosto de assistir filmes (amo os filmes da Marvel e uma Potterhead de carteirinha!), adoro pipoca
+                        e hamburguer. Mas isso só quando estou com tempo livre, nos últimos meses tenho me dedicado
+                        bastante aos meus estudos participando de projetos e bootcamps. Sempre me dizem que quando boto
+                        algo na cabeça vou até o fim!</p>
+                </div>
+                <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+            </div>
+        </section>
+
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a trajetoria nessa vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Bem, cresci no interior e na adolescencia me mudei para outra cidade. Comecei faculdade na area de
+                    saude e então decidi mudar para TI, e fui a melhor coisa que eu pudia ter feito. Sou péssima com
+                    textinhos sobre mim rs. </p>
+
+            </div>
+        </section>
+
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar e tenho uma listinha dos lugares que quero conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>Rio de Janeiro</li>
+                        <li>Maranhão</li>
+                        <li>Curitiba</li>
+                        <li>Canadá</li>
+                        <li>E muito mais...</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Amo ouvir música. Confira minhas artistas favoritas: </h3>
+                    <ul class="lista__item">
+                        <li>Zimbra</li>
+                        <li>Baco Exu do Blues</li>
+                        <li>Avril Lavigne</li>
+                        <li>Duda Beat</li>
+                        <li>Meus gostos são variados...</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Amo ler, e esses são meus livros preferidos: </h3>
+                    <ul class="lista__item">
+                        <li>Saga Harry Potter</li>
+                        <li>Lady Killers</li>
+                        <li>Saga Anne de Green Gables</li>
+                        <li>As vantagens de ser Invisivel</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale Conosco</h2>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="number">Qual a sua idade:</label>
+                    <input id="number" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Digite seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                    <label for="">Qual a sua comida favorita?</label>
+                    <select name="comidas-que-eu-gosto" id="comidas">
+                        <option value="hamburguer">Hamburguer</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="lasanha">Lasanha</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div class="div-contatos">
+                        <div class="input-field">
+                            <input type="radio" value="whatsapp" name="contato" id="whatsapp" checked>
+                            <label for="whatsapp">WhatsApp</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="radio" value="linkedin" name="contato" id="linkedin">
+                            <label for="linkedin">Linkedin</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="radio" value="email1" name="contato" id="email1">
+                            <label for="email1">Email</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked> <label for="">Concorda que você é maravilhosa?</label>
+                </div>
+
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Anne Pinho - Aula {Reprograma} | @Copyright 20021</p>
+    </footer>
+</body>
+
+</html>
