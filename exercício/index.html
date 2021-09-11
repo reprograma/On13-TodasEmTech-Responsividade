@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Informações não visíveis ao usário-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem eu sou?</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!--Informações visíveis ao usuário-->
+    <header class="cabecalho">
+        <nav class="menu">
+            <img src="./img/icon.png" class="logo">
+
+            <ul class="menu-navegacao">
+                <li><a href="#sobre-mim" class="menu-navegacao__link">Sobre mim</a></li>
+                <li><a href="#recomendacao" class="menu-navegacao__link"> Recomendações </a></li>
+                <li><a href="#contato" class="menu-navegacao__link"> Contato </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="card-introducao" id="sobre-mim">
+            <h1 class="card-introducao__titulo">Quem sou eu?</h1>
+            <div class="container-texto">
+                <div class="container-texto__paragrafo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni recusandae explicabo consectetur
+                        reprehenderit voluptate similique cupiditate nihil hic delectus eligendi, exercitationem
+                        quisquam
+                        consequatur error animi, at incidunt libero quia! Ipsam. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Illum accusamus quaerat laborum, sit asperiores dignissimos ipsum veritatis
+                        quibusdam,
+                        facere iste repellat praesentium magnam velit doloremque. Praesentium dolore ipsam eius minima.
+                    </p>
+                    <button type="button">Explore</button>
+                </div>
+                
+
+                <img src="./img/mulher-negra-programando.png" alt="mulher negra usando teclado para programar" class="container-texto__imagem">
+            </div>
+        </section>
+
+        <section class="container-recomendacao" id="recomendacao">
+            <h1 class="container-recomendacao__titulo">Minhas recomendações...</h1>
+            <div class="container-recomendacao__paragrafo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste magnam aspernatur enim
+                    voluptatem ut dolorem. Nostrum laboriosam a inventore doloremque delectus praesentium impedit
+                    aperiam amet quam perspiciatis? Eos, autem.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eaque rerum soluta. Doloribus ut
+                    atque delectus quasi cumque animi, illum nulla natus nisi, repellendus a excepturi debitis eius
+                    explicabo quibusdam.</p>
+            </div>
+        </section>
+
+        <section class="card-recomendacao">
+            <h2 class="card-recomendacao__titulo"> Veja as minhas recomendações para você:</h2>
+            <div class="container-lista">
+                <div class="lista">
+                    <h3>Livros:</h3>
+                    <ul class="lista__item">
+                        <li>Livro 1</li>
+                        <li>Livro 2</li>
+                        <li>Livro 3</li>
+                        <li>Livro 4</li>
+                        <li>Livro 5</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Filmes:</h3>
+                    <ul class="lista__item">
+                        <li>Filme 1</li>
+                        <li>Filme 2</li>
+                        <li>Filme 3</li>
+                        <li>Filme 4</li>
+                        <li>Filme 5</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Canais no Youtube:</h3>
+                    <ul class="lista__item">
+                        <li>Canal 1</li>
+                        <li>Canal 2</li>
+                        <li>Canal 3</li>
+                        <li>Canal 4</li>
+                        <li>Canal 5</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-contato" id="contato">
+            <h1>Contato</h1>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="seuemail@dominio.com" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(xx) x xxxx-xxxx" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" placeholder="Escreva sua mensagem para nós..."></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label
+                        for="whatsapp">Whatsapp</label>
+                    <input type="radio" value="linkedin" name="contato" id="linkedin"><label
+                        for="linkedin">Linkedin</label>
+                    <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                </fieldset>
+
+                <div class="form-botao">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+</body>
+<footer>
+    <p>Site desenvolvido por Dardânia Camargos - Aula {Reprograma} | © Copyright 2021</p>
+</footer>
+
+</html>

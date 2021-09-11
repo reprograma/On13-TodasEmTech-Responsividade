@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Hina Mincho', serif;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 10vh;
+}
+
+.menu{
+    width: 100%;
+    background-color: rgb(27, 73, 101);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+    align-items: center;
+    position: fixed;
+}
+
+.logo{
+height: 60px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+    position: relative;
+}
+
+.menu-navegacao__link:hover{
+    background-color: #D3D3D3;
+}
+
+button{
+    width: 180px;
+    color:white;
+    font-size: 20px;
+    padding: 12px 0;
+    background: rgb(27, 73, 101);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+
+}
+
+main{
+    width: 90%;
+    background-color: rgb(202, 233, 255);
+    margin:  3% 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #D3D3D3;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-introducao, .container-recomendacao, .card-recomendacao{
+    padding: 4%;
+}
+
+.container-texto__imagem{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.card-introducao__titulo{
+    color: #1b4965;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-recomendacao__titulo{
+    color: #1b4965;
+    font-size: 30px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.card-recomendacao__titulo{
+    font-size: 30px;
+    color: #1b4965;
+    margin-bottom: 30px;
+}
+
+.container-texto{
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafo p, .container-recomendacao__paragrafo p{
+    font-size: 17px;
+}
+
+.container-texto__imagem{
+    width: 30%;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.container-lista>.lista{
+    width: 90vw;
+    max-width:800px;
+    margin: 10px;
+}
+
+.lista{
+    width: 30%;
+    background-color: #1b4965;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 20px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.lista:hover{
+    transform: scale(1.1);
+}
+
+.lista h3{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: white;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "💬";
+    margin-right: 10px;
+}
+
+form{
+    width: 70%;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: 2px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #1b4965;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-contato h1{
+    font-size: 25px;
+    color: #1b4965;
+    margin-bottom: 20px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(27, 73, 101);
+}
+
+@media (max-width:900px){
+    .container-texto__imagem{
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+}
+}
