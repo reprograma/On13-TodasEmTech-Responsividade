@@ -85,7 +85,7 @@
         @media(min-width:1280px) {
             * {
                 font-size: 18px;
-                background-color: lavender;
+                background-color: rgb(29, 29, 199);
             }
             .div-2>input {
                 max-width: 20vw;
