@@ -5,17 +5,19 @@
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
 }
-
+body {
+  background-color: rgb(243, 239, 239);
+}
 .menu {
   width: 100%;
   background-color: #073d69;
   display: flex;
-  justify-content: space-between;
-  height: 60px;
+  justify-content: center;
+  height: 4%;
   align-items: center;
-  padding: 0 20px;
   position: fixed;
 }
+
 .menu-nav {
   display: flex;
   list-style: none;
@@ -24,47 +26,47 @@
 .menu-nav__link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
-}
-.menu-nav__link:hover {
-  background-color: white;
-  color: blue;
-  border-radius: 10px;
+  margin: 60px;
 }
 
 .background-header {
-  height: 100%;
+  height: 50vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.background-header__img {
-  background-size: cover;
+.background-header-img {
+  margin: 80px 100px 10px 100px;
+  width: 80%;
+  height: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
 }
 
-#background-header__text{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+#background-header__text {
+  text-align: center;
+  background-color: #073d69;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin-left: 100px;
+  margin-bottom: 40px;
 }
+
 .background-header__title {
-  color: black;
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-
 
 .background-header__subtitle {
-  color: black;
   font-size: 20px;
 }
 
 main {
   width: 100%;
-  background-color: rgb(243, 239, 239);
+  background-color: rgb(224, 217, 217);
 }
 
 .card-introducao,
@@ -79,14 +81,15 @@ main {
   margin-bottom: 20px;
 }
 
-.container-texto {
-  display: flex;
-  align-items: center;
-}
-
 .container-texto__paragrafos {
-  width: 60%;
-  margin-right: 10%;
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.container-texto__imagem {
+  width: 100%;
+  height: 150px;
 }
 
 .container-texto__paragrafos p,
@@ -101,28 +104,32 @@ main {
   width: 30%;
 }
 
-.container-form__titulo {
-  font-size: 25px;
-  margin-bottom: 30px;
-  color: #f5f5f5;
-}
 .container-form {
   padding: 40px;
   border-radius: 10px;
   background-color: #073d69;
   margin: 0px 50px;
+  flex-wrap: wrap;
+}
+.container-form__titulo {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
   text-align: center;
 }
+
 label {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
+  display: flex;
+  margin: 20px 2px;
 }
 form input:not(:last-child) {
-  width: 36vh;
-  height: 5.5vh;
+  width: 45vh;
+  height: 5vh;
   border-radius: 10px;
   border-color: none;
-  font-size: 1rem;
+  font-size: 20px;
 }
 input::-webkit-outer-spin-submit,
 input::-webkit-inner-spin-submit {
@@ -132,13 +139,10 @@ input::-webkit-inner-spin-submit {
 form input[type="submit"] {
   background-color: #e5bc30;
   border-color: none;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 8px 18px;
   border-radius: 10px;
-  margin-left: 20px;
-}
-form input[type="submit"]:hover {
-  background-color: white;
+  width: 45vh;
 }
 
 .card-gostos__titulo {
@@ -149,8 +153,7 @@ form input[type="submit"]:hover {
 
 .container-listas {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wraap;
+  flex-wrap: wrap;
 }
 
 .lista {
@@ -158,7 +161,7 @@ form input[type="submit"]:hover {
   background-color: #073d69;
   border-radius: 10px;
   padding: 16px;
-  margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 .lista h3 {
@@ -180,12 +183,13 @@ footer {
 }
 .sinopseMovie {
   text-align: justify;
+  font-size: 14px;
 }
 
 .background-headerMovie {
-  width: 34vh;
+  width: 38vh;
   height: 50vh;
-  margin: 2vh 10vh;
+  margin: 2vh 6vh;
 }
 
 footer {
@@ -194,20 +198,163 @@ footer {
   background-color: #073d69;
 }
 
-/* @media (min-width: 360px) {
-  /* GalaxyS5 */
-
-  /* {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    } 
-  .nav-header {
+@media (min-width: 768px) {
+  /* IPAD */
+  .container-texto__imagem {
+    width: 30%;
+    margin: 0px 60px;
+  }
+  .lista {
+    width: 60vh;
+    background-color: #073d69;
+    border-radius: 10px;
+    padding: 16px;
+    margin-left: 50px;
+  }
+  .background-headerMovie {
+    width: 38vh;
+    height: 50vh;
+    margin: 2vh 9vh;
   }
 
-  .background-header__title {
+  label {
+    font-size: 25px;
+    color: white;
+    display: flex;
+    margin: 20px 2px;
+    margin-left: 120px;
+  }
+  form input:not(:last-child) {
+    width: 45vh;
+    height: 5vh;
+    margin-left: 120px;
+    border-radius: 10px;
+    border-color: none;
+    font-size: 20px;
+  }
+
+  form input[type="submit"] {
+    background-color: #e5bc30;
+    border-color: none;
+    font-size: 2rem;
+    padding: 8px 18px;
+    border-radius: 10px;
+    width: 45vh;
+    margin-left: 120px;
   }
 }
 
-/* @media (min-width: 375px) {
-  Iphone x */
+@media (min-width: 1024px) {
+
+  .menu {
+    height: 60px;
+  }
+  .menu-nav__link {
+    padding: 0px 50px;
+  }
+  .menu-nav__link:hover {
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+  }
+
+  .background-header {
+    height: 80vh;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .background-header-img {
+    margin: 88px 10px 40px 20px;
+    width: 50%;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+
+  #background-header__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #073d69;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 198px 10px 40px 0px;
+  }
+  .background-header__title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .background-header__subtitle {
+    font-size: 15px;
+  }
+
+  .container-form__titulo {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+  }
+  .container-form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #073d69;
+    margin: 0px 50px;
+    text-align: center;
+  }
+  label {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+  }
+  .forms {
+    display: flex;
+    justify-content: space-between;
+  }
+  form input:not(:last-child) {
+    width: 36vh;
+    height: 5vh;
+    border-radius: 10px;
+    border-color: none;
+    font-size: 1rem;
+    margin: 0px 8px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #e5bc30;
+    border-color: none;
+    font-size: 1rem;
+    padding: 8px 1px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: white;
+  }
+
+  .container-listas {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0;
+
+  }
+
+  .lista {
+    width: 50vh;
+    background-color: #073d69;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0;
+    
+  }
+  .movieName {
+    font-size: 20px;
+    text-align: center;
+  }
+.background-headerMovie {
+  margin: 0px 32px;
+}
+}
