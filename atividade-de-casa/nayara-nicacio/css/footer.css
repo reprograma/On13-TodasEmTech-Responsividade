@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    background-color: #a36f9c;
+}
+
+.redes {
+    transition: 0.5s all ease-out;
+    text-align: center;
+}
+
+.redes li {
+    text-decoration: none;
+}
+
+.redes div a img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    /* Esse padding trabalha a margem interna dos icones de redes */
+}
+
+.redes div a img:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 3px 16px 0px #c3ccb4;
+    border-radius: 15px 5px;
+}
