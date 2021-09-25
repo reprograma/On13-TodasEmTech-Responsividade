@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 90vh;
+}
+
+.menu {
+    width: 100%;
+    background-color: #dabc2a;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    padding: 15px 15px;
+    position: fixed;
+    top: 0;
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.2rem;
+}
+
+.menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu-navegacao li {
+    display: block;
+    text-align: right;
+    padding: 5px;
+}
+
+.menu-navegacao__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    transition: 0.5s all;
+}
+
+.menu-navegacao__link:hover {
+    background-color: #ac9523;
+    padding: 8px;
+}
+
+.banner {
+    margin-top: 150px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background: linear-gradient(rgba(172, 149, 35, 0.5), rgba(218, 188, 42, 0.7)), url(./../img/girassol.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.banner__titulo {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #ac9523;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.banner__subtitulo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px #ac9523;
+    width: 60%;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+main {
+    width: 80%;
+    margin: -50px auto 50px auto;
+    background: linear-gradient(rgba(255, 249, 219, 0.856), rgba(216, 183, 17, 0.945));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+}
+
+.card-apresentacao, .container-autora, .card-livros {
+    display: block;
+    text-align: center;
+    padding: 5% 10%;
+    margin: 10px auto;
+}
+
+.card-apresentacao__titulo, .container-autora__titulo, .card-livros__titulo {
+    color: rgb(94, 83, 30);
+    font-size: 1.6rem;
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.container-autora__titulo {
+    text-align: right;
+}
+
+.card-livros__titulo {
+    display: block;
+    text-align: center;
+}
+
+.container-resumo, .container-biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-autora__paragrafos p, .container-resumo__paragrafos p {
+    color: rgb(41, 39, 39);
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.container-resumo__imagem, .container-autora__imagem {
+    height: 215px;
+    padding: 5px 10px;
+}
+
+.container-resumo__imagem {
+    float: right;
+}
+
+.container-autora__imagem {
+    float: left;
+}
+
+.container-listas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.lista {
+    width: 100%;
+    height: 280px;
+    background-color: #ac9523;
+    border-radius: 5px;
+    padding: 30px;
+    transition: 0.5s all;
+    box-shadow: 3px 3px 9px #97831e;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.lista h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #302803;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-left: 15px;
+    display: block;
+    text-align: left;
+}
+
+.lista:hover {
+    transform: scale(1.1);
+}
+
+.lista__item li {
+    color: #fff;
+    margin-bottom: 5px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista__item li::before {
+    content: "▽";
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.card-vamos-conversar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-vamos-conversar h2 {
+    color: rgb(94, 83, 30);
+    font-size: 1.6rem;
+    margin: 20px auto;
+}
+
+.card-vamos-conversar p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 80%;
+    border: 2px solid rgb(94, 83, 30);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+label, input {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+input#nome, input#email, input#telefone {
+    width: 80%;
+}
+
+label {
+    font-weight: 600;
+}
+
+input::placeholder, textarea::placeholder {
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+textarea {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+#regiao {
+    width: 80%;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    padding: 5px;
+}
+
+fieldset {
+    border: 2px solid rgb(94, 83, 30);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+fieldset>legend {
+    font-weight: 600;
+    padding: 2px;
+    font-size: 1.1rem;
+}
+
+fieldset>input {
+    margin: 10px;
+}
+
+.checkbox-lancamentos input {
+    margin-left: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.form-botao input {
+    border: 0;
+    box-shadow: 1px 1px 2px rgb(94, 83, 30);
+    background-color: rgb(94, 83, 30);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.form-botao input:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #dabc2a;
+    color: #fff;
+}
+
+footer>p {
+    font-size: 1.1rem;
+}
+
+@media (min-width:768px) {
+    .cabecalho {
+        height: 60vh;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+    }
+
+    .menu__logo{
+        font-size: 2.2rem;
+        margin-left: 5px;
+    }
+
+    .menu-navegacao {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-navegacao__link {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .banner {
+        margin-top: 50px;
+        height: 60vh;
+    }
+
+    main {
+        margin: 100px auto;
+    }
+
+    .card-apresentacao__titulo, .container-autora__titulo, .card-livros__titulo {
+    font-size: 2rem;
+    }
+
+    .container-autora__paragrafos p, .container-resumo__paragrafos p, .card-vamos-conversar p {
+        font-size: 1.2rem;
+    }
+
+    .lista h3 {
+        font-size: 1.6rem;
+    }
+
+    .lista a {
+        font-size: 1.4rem;
+    }
+
+    .card-vamos-conversar p {
+        font-size: 1.3rem;
+        width: 70%;
+    }
+
+    .card-vamos-conversar h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    label, input, fieldset>legend {
+        font-size: 1.2rem;
+    }
+
+    input#nome, input#email, input#telefone {
+        width: 60%;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        width: 60%;
+    }
+
+    #regiao {
+        width: 60%;
+    }
+
+    footer>p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1280px) { 
+    .cabecalho {
+        height: 95vh;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+    }
+
+    .menu__logo{
+        font-size: 2.2rem;
+        margin-left: 5px;
+    }
+
+    .menu-navegacao {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-navegacao__link {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .banner {
+        margin-top: 50px;
+        height: 95vh;
+    }
+
+    .banner__titulo {
+        font-size: 2.2rem;
+    }
+
+    .banner__subtitulo {
+        font-size: 1.4rem;
+    }
+  
+    main {
+        width: 85%;
+    }
+
+    .card-apresentacao, .container-autora, .card-livros {
+        padding: 3%;
+        width: 85%;
+    }
+
+    .card-apresentacao__titulo, .container-autora__titulo, .card-livros__titulo {
+        font-size: 2.2rem;
+        
+    }
+
+    .container-autora__paragrafos p, .container-resumo__paragrafos p {
+        font-size: 1.3rem;
+    }
+
+    .container-resumo__imagem, .container-autora__imagem {
+        height: 300px;
+        padding: 0 30px;
+    }
+
+    .container-listas {
+        justify-content: space-around;
+    }
+
+    .lista {
+        width: 32%;
+        height: 250px;
+        border-radius: 5px;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .lista h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .lista a {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-left: 12px;
+        padding: 2px;
+        text-align: left;
+    }
+
+    .lista__item li::before {
+        font-size: 1rem;
+        margin-left: 2px;
+        margin-top: 5px;
+    }
+
+    .card-vamos-conversar h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-vamos-conversar p {
+        font-size: 1.5rem;
+        width: 65%;
+    }
+
+    form {
+        width: 65%;
+    }
+
+    label, input {
+        font-size: 1.1rem;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 1.1rem;
+    }
+
+    fieldset>legend {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    footer>p {
+        font-size: 1.2rem;
+    }
+}
