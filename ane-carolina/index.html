@@ -1,36 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Minha aula de responsividade </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1> Testando diferentes telas com breakpoints e media queries </h1>
+
+<html>
+    <head>
+
+       <!-- aqui vai ser incluída informações não visíveis ao usuário-->
+       <meta charset="UTF-8">
+        <title> super aluna {reprograma} </title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
     
-    <div class="div-1"> <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, deleniti error beatae, quae placeat assumenda minus similique nam doloribus facilis repudiandae tempora atque quas id iste! Laboriosam earum ab maxime?
-    </p> </div>
+    </head>
 
-    <div  class="div-2">
-        <input placeholder="digite sua comida fav" type="text">
-        <input placeholder="digite sua atriz fav" type="text">
-        <input placeholder="digite sua cidade fav" type="text">
-    </div>
 
-    <div  class="div-3">
-        <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
-        <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
-        <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
-    </div>
-    <div class="div-4">
-        <a href="www.reprograma.com">Link do reprograma </a>
-        <a href="www.medium.com"> Link do medium</a>
-        <a href="www.github.com">Link do Github</a>
-    </div>
+    <body>
+        <!-- aqui vai ser incluída informações  visíveis ao usuário-->
+        <header class="cabecalho">
+            <nav class= "menu">
+                <a href= "" class="menu__logo">    { }  </a>
+                <ul class="menu-navegacao"> 
+                    <li> <a href="#super-aluna" class="menu-navegacao__link"> Eu sou Mozi </a> </li>
+                    <li> <a href="#trajetoria" class="menu-navegacao__link"> Trajetória </a>  </li>
+                    <li> <a href="#fale-comigo" class="menu-navegacao__link"> Fale comigo! </a> </li>
+
+                </ul>
+
+            </nav>
+
+            <div class= "banner">           
+                    <h1 class="banner__titulo"> Olá, eu sou Mozi! Aluna do {Reprograma} </h1>
+                    <p class= "banner__subtitulo"> Tá passada? Vem conhecer um pouco sobre mim! </p>  
+            </div>
+
+        </header>
+
+        <main>  
+            <section class="card-introducao" id="super-aluna">
+                <h2 class="card-introducao__titulo"> Um pouco sobre mim...</h2>
+                <div class="container-texto">
+                    <div class="container-texto__paragrafos">
+                        <p> Sou uma tipo 7 do <a class ="a" href="https://www.vittude.com/blog/eneagrama/">eneagrama</a> que fala pra caramba </p>
+                        <p> Procuro estar em contato com diferentes ambientes, caçando possibilidades pra mudar minha realidade. Aproveito as oportunidades que me são dadas, encaro desafios com uma visão exploradora, com maestria e sem medo. </p>
+                        <p> Sou voltada a processos e a soluções. Gosto muito de facilitar coisas: processos, comunicações, eventos e apresentações. Me considero uma pessoa criativa e mestre das gambiarras.</p>
+                    </div>
+                    <img src= "././/img/menina-globo.png" alt="menina segurando globo" class="container-texto__imagem">
+                </div>
+            </section>
+
+            <section class= "container-trajetoria" id="trajetoria">
+                <h2 class= "container-trajetoria__titulo"> Deixa eu te contar um pouco sobre a minha trajetória :) </h2>
+                <div class="container-trajetoria__paragrafo">
+                    <p>Estudante de Comunicação e Marketing na UNIFACS. Tranquei Engenharia Química no IFBa ao me descobrir apaixonada por comunicação.
+                    Sou Alumni na AIESEC em Salvador, ex diretora de Marketing e Relacionamento com o Cliente. Tenho experiência em Customer Success, Gestão de Times, Vendas, Marketing Digital e Design Gráfico. Ah, também tenho uma loja online, onde pratico meus conhecimentos e falo muito sobre isso, vem viajar comigo em <a href="www.nebucompany.com"> www.nebucompany.com </a> </p>
+                    <p> Atualmente estudo programação front-end no Reprograma e UX Design no Daredev. Quero iniciar minha carreira em Tech ainda neste ano!</p>
+                </div>
+
+            </section>
+
+
+
+            <section class="card-gostos">
+                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                        <ul class="lista__item">
+                            <li>Indonésia</li>
+                            <li>Turquia</li>
+                            <li>Egito</li>
+                            <li>Argentina</li>
+                            <li>Nova Zelândia</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                        <ul class="lista__item">
+                            <li> Doja Cat - Aint Shit </li>
+                            <li> Rihanna - Pour it up </li>
+                            <li> Black Alien - Terra </li>
+                            <li> Emicida - Principia </li>
+                            <li> Faustino - Vencedores </li>
+                        </ul>
+
+                    </div>
+                    <div class="lista">
+                        <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                        <ul class="lista__item">
+                            <li>7 chaves do sucesso - Deepak </li>
+                            <li>Saga Percy Jackson </li>
+                            <li> Morte Súbita </li>
+                            <li>Amoras </li>
+                            <li>Antifrágil </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>   
+            
+            <section class="card-fale-conosco" id="fale-comigo">
+                <h2> Fale comigo!</h2>
+                <form> 
+                    <div class= "campo-form">
+                        <label for="nome">Me fala o seu nome completo:</label>
+                        <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        <label for="tel">Digite o seu telefone:</label>
+                        <input type="tel" name="telefone" max="12" placeholder="+55 (XX) XXXXX-XXXX">
+                        <label for="email">Me fala o seu email:</label>
+                        <input type="email" name="email" placeholder="seuemail@email.com">
+                        <label for="mensagem">Deixe sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                        <label for="comidas"> Qual a sua comida favorita?</label>
+                        <select name="comidas-que-eu-gosto" id= "comidas">
+                            <option value="coxinha"> Coxinha </option>
+                            <option value="caruru"> Caruru </option>
+                            <option value="aipim"> Aipim </option>
+                        </select>
+
+                        <fieldset> 
+                            <legend>Como posso entrar em contato com você?
+                            <div>                          
+                            <input type="radio" value="zap" name="contato" id="zap" for="zap" ><label>WhatsApp</label>
+                            <input type="radio" value="linkedinho" name="contato" id="linkedinho" for="linkedinho"><label>LinkedIn</label>
+                            <input type="radio" value="email1" name="contato" id="email1" for="email1"><label>E-mail</label>
+                            </div>
+                            </legend>
+                        </fieldset>
+                    </div> 
+
+                    
     
+                    <div>
+                        <input type="checkbox"> <label> Concorda em fornecer os seus dados para que eu entre em contato?</label>
+                    </div>
 
-</body>
+            
+    
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulario!">
+                    </div>
+    
+    
+                </form>
+                </section>
+            
+        </main>
+
+        <footer>
+
+            <p> Site desenvolvido por Mozi - Aula 3 {reprograma} | Copyright 2021 </p>
+
+        </footer>
+
+
+    </body>
+
 </html>
