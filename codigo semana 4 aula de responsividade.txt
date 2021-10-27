@@ -1,0 +1,140 @@
+////////////////////////////////////// HTML ///////////////////////////////////////
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha aula de responsividade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Testando diferentes telas com breakpoints e media queries</h1>
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima consectetur, doloribus architecto assumenda maiores, veritatis cum obcaecati, fugit necessitatibus qui labore facere ducimus repudiandae dolores nisi veniam minus nostrum?
+    </p>
+  </div>
+  <div class="div-2">
+    <input placeholder="digite sua comida favorita" type="text">
+    <input placeholder="digite sua banda favorita" type="text">
+    <input placeholder="digite sua atriz favorita" type="text">
+  </div>
+  <div class="div-3">
+   <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
+   <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
+   <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
+   <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
+   <img src="../imagens/many-devices.jpg" alt="homem com dispositivos">
+  </div>
+  <div>
+    <a target="blank" href="https://www.reprograma.com.br">Link da Reprograma</a>
+    <a target="blank" href="https://www.medium.com">Leia meu Medium</a>
+    <a target="blank" href="https://www.github.com/vivihumpheys">Meu github</a>
+  </div>
+</body>
+</html>
+
+//////////////////////////////////////////////////// CSS /////////////////////////////////////////////////////////////////////////////
+
+*{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:blanchedalmond;
+  padding: 20px;
+}
+
+h1{
+  font-size: 2.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+h1 + div{
+  width: 100%;
+}
+
+div>p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+div>p:hover{
+  color:aqua;
+  font-weight: bolder;
+}
+
+input:first-child{
+color: blueviolet;
+}
+
+.div-2{
+  display:flex;
+  flex-direction: column;
+}
+
+.div-2>input{
+  margin: 15px;
+}
+
+.div-2>input:focus{
+  background-color: white;
+}
+
+.div-3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.div-3>img{
+  width: 90vw;
+  max-width:800px;
+  margin: 10px;
+}
+
+.div-3 + div{
+  display: flex;
+  flex-direction: column;
+  border: thistle 2px solid;
+}
+
+div>a{
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+
+div>a:hover{
+  font-weight: bolder;
+}
+
+@media(min-width:768px){
+  .div-3 + div{
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+
+ *{
+   font-size: 16px;
+   background-color: coral;
+ }
+
+}
+
+@media(min-width:1280px){
+  *{
+    font-size: 18px;
+    background-color: lavender;
+  }
+
+  .div-2>input{
+    max-width: 20vw;
+  }
+
+  .div-2{
+    flex-direction: row;
+    justify-content: center;
+  }
+}

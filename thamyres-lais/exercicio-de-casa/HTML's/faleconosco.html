@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <html lang="PT-BR">
+        <title>Minha essência-Thamyres Lais</title>
+        <link rel="stylesheet" href="../CSS's/faleconosco.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <a href="https://reprograma.com.br/" target="_blank" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="index.html" class="menu-navegacao__link">
+                        Home
+                     </a>
+                    </li>
+                    <li><a href="Filmes.html" class="menu-navegacao__link">
+                        Filmes
+                        </a>
+                    </li>
+                    <li><a href="Musicas.html" class="menu-navegacao__link">
+                        Músicas
+                        </a>
+                    </li>
+                    <li><a href="viagens.html" class="menu-navegacao__link">
+                        Futuras viagens
+                     </a>
+                    </li>
+                    <li><a href="faleconosco.html" class="menu-navegacao__link">
+                        Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <section class="card-fale-conosco">
+                <h1 class="introducao__titulo">Fale Comigo</h1>
+                <form>
+                    <div class="campo__form">
+                     <label for="nome">Nome Completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        
+                        <label for="idade">Qual a sua idade?:</label>
+                        <input id="idade" type="number" name="idade" min="0" max="120" value="0">
+                        
+                        <label for="email">Digite o seu email:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com" required>
+
+                        <label for="telefone">Digite o seu telefone:</label>
+                        <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="mensagem">Digite a sua mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea required>
+
+                        <label for="hobbies">Qual o seu hobby favorito?</label>
+                        <select name="hobbies-que-eu-gosto" id="hobbies">
+                            <option value="desenhar">Desenhar</option>
+                            <option value="Assistir">Assistir</option>
+                            <option value="ler">Ler</option>
+                        </select>
+                    </div>
+                    
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <div>
+                            <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                            <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                            <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                        </div>     
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" checked><label>Concorda que eu entre em contato com você?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+
+                </form>
+
+            </section>
+
+            <footer>
+               
+                <p>Carinhosamente desenvolvido por Thamyres Lais - Aluna <a href="https://reprograma.com.br/" target="blank">{Reprograma}</a></p>
+    
+            </footer>

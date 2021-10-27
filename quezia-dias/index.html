@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo Quezia Guilhermina</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Kaisei + HarunoUmi & display = swap " rel=" stylesheet ">
+</head>
+
+<body>
+    <!-- Aqui vai estão as informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo"></a>
+            <ol class="menu-navegacao">
+                <li><a href="https://www.linkedin.com/feed/" class="menu-navegacao__link">Quezia Guilhermina</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+            </ol>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou Quezia Guilhermina</h1>
+            <p class="banner__subtitulo">Vou falar um pouco sobre minha jornada</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao" id="Quezia Guilhermina">
+            <h2 class="card-introducao__titulo">Uma palhinha sobre o que me cerca</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Sou uma mulher negra, nascida e criada no Estado do Espírito Santo. Apaixonada por minha terra. Que modéstia à parte e maravilhosa. Uma curiosidade sobre o ES...em um percurso de 40 minutos de carro você curte uma bela praia e se deleita
+                        nos frios das montanhas capixabas.</p>
+                    <p> O mundo da Tecnologia é fascinante... Quando concluí a graduação me pedagogia eu guardei o sonho de estudar TI no fundo do coração.</p>
+                    <p>A oportunidade apareceu e aqui estamos nós com o pensamento fixo e o coração batendo aceledo. É desafiador? Sim. Tubo é possivel para quem busca realizar. </p>
+                </div>
+                <img src="img/1.jpeg" alt="Um desenho de quezia focando seu rosto" class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Sempre tive o sonho de estudar e "subir na vida", para quem reside na periferia esta é um frase muito repetida pelos pais. E assim eu fui crescendo e buscando meu lugar ao sol. Sempre estudei em escola pública. Cursei pedagogia consegui
+                    trabalhar na área, me apaixonei pela área da Tecnologia e pretendo agregar a experiênca que tenho na educação à tecnologia. </p>
+                <p>Em meus diálogos sempre procuro incentivar as pessoas evoluírem quanto ao pessoal, profissional. E uma fórmula maravilhosa é o programa reprograma juntamente com a Equipe que a compôe.</p>
+            </div>
+        </section>
+
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Atividades que me deixam realizada</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar com a família, e tenho uma lista dos lugares mais importantes:</h3>
+                    <ul class="lista__item">
+                        <li>Rio Grande do Sul</li>
+                        <li>Retornar à Santa Catarina</li>
+                        <li>Retornar â São Paulo</li>
+                        <li>Retornar ao Paraná</li>
+                        <li>Conhecer as montanhas da Região Sul</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo Tocar Saxofone Confira as minhas musicas favoritas:</h3>
+                    <ul class="lista__item">
+                        <li>Hino 225 da Harpa Cristã</li>
+                        <li>Música do filme "Carruagem de fogo"</li>
+                        <li>Hino da Independência do Brasil</li>
+                        <li>Música "New York, New York"</li>
+                        <li>Música "Do meu coração vibram às cordas</li>
+                    </ul>
+
+                </div>
+                <div class="lista">
+                    <h3>Amo fotografar, segue a lista de trabalhos já realizados:</h3>
+                    <ul class="lista__item">
+                        <li>Casamentos</li>
+                        <li>Bodas de Prata e Ouro</li>
+                        <li>Aniversários</li>
+                        <li>15 anos</li>
+                        <li>Gestante</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Qual a sua idade?:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite o seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Digite o seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="comidas">Qual a sua atividade favorita?</label>
+                    <select name="atividade" id="atividade">
+                        <option value="espostes">Esportes</option>
+                        <option value="jogos/tecnologia">Jogos Digitais</option>
+                        <option value="cinema">Cinema</option>
+                        <option value="teatro">Teatro</option>
+                        <option value="Viajar">Viajar</option>
+                        <option value="ocio">Descansar</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos manter contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp">
+                        <label for="whatsapp">whatsapp</label>
+
+                        <input type="radio" value="linkedin" name="contato" id="linkedin">
+                        <label for="linkedin">Linkedin</label>
+
+                        <input type="radio" value="email1" name="contato" id="email1">
+                        <label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
+            </form>
+
+
+    </main>
+    <footer>
+        <p>Site desenvolvido por Quezia Dias - Aula 3 {Reprograma} | © Copyright 2021</p>
+    </footer>
+
+</body>
+
+</html>

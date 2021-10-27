@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 100vh;
+    background:  url(../img/bg.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    background-color: #6bc6b3;
+    display: flex; 
+    justify-content:space-between; 
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    
+} 
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover{
+    background-color: #a9ddd2;
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main{
+    width: 90%;
+    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(107, 198, 179, 0.6));
+    margin: 3% 5%;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px  #cccccc; 
+}
+
+.card-introducao, .container-trajetoria, .card-gostos{
+    padding: 4%;
+}
+
+.card-introducao__titulo{
+    color: rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto{
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos{
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify; 
+}
+
+.container-texto__imagem{
+    width: 30%;
+    border-radius: 10%;
+}
+
+.texto-gif{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.texto-gif p{
+    margin: 0;
+    font-weight: 600;
+}
+
+.texto-gif img{
+    width: 6%;
+    margin-left: 2%;
+    border-radius: 10%;
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #502f4c;
+}
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.lista{
+    width: 30%;
+    background-color: #aaddd2;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+    font-weight: 600;
+}
+
+.lista:hover{
+    transform: scale(1.1);
+}
+
+.lista h3{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #6bc6b3;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 70%;
+    border: 2px solid #526c66;
+    padding: 20px;
+    border-radius: 10px;
+     margin-bottom: 40px;
+}
+
+fieldset{
+    border: 2px solid #526c66;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #6bc6b3;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-botao input:hover{
+    transform: scale(1.1);
+}
+
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #6bc6b3;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 425px) {
+    .cabecalho{
+        height: 45vh;
+        
+    }
+
+    .menu-navegacao{
+        justify-content: center;
+    }
+
+    .menu-navegacao__link{
+        font-size: 12px;
+    }
+
+    .banner__subtitulo{
+        width: 70%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card-introducao__titulo{
+        font-size: 25px;
+    }
+
+    .container-texto__paragrafos{
+        width: 95%;
+        margin: 0; 
+    }
+
+    .container-texto__imagem{
+        width: 55%;
+    }
+
+    .container-texto__paragrafos p, .container-trajetoria__paragrafo p, p{
+        font-size: 12px;
+    }
+
+    .container-trajetoria__titulo, .card-gostos__titulo{
+        font-size: 20px;
+    }
+
+    .lista{
+        min-width: 85%; 
+    }
+
+    .lista h3{
+        font-size: 15px;
+    }
+
+    .lista__item li{
+        font-size: 12px;
+    }
+
+    form{
+        width: 95%;
+    } 
+
+    .form-botao input{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px){
+    
+    .cabecalho{
+        min-height: 30vh;
+        background-position: center;
+    }
+
+    .container-texto{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-texto__paragrafos{
+        width: 100%;
+        margin: 0; 
+    }
+
+   
+    .container-listas{
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .card-fale-conosco h2{
+        margin-bottom: 10px;
+    }
+
+    .lista{
+        width: 70%; 
+        margin-top: 45px;
+    }
+
+    form{
+        width: 90%;
+    }
+}
