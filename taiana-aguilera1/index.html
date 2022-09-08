@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <title>Lov Lov Cat >•
+        < </title>
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo"> >•< </a>
+            <ul class="menu-navegacao">
+                <li><a href="#" class="menu-navegacao__link">Para Gatos</a></li>
+                <li><a href="#" class="menu-navegacao__link">Para Humanos</a></li>
+                <li><a href="#" class="menu-navegacao__link">Lov Lov Adota</a></li>
+                <li><a href="#" class="menu-navegacao__link">Cat Contatos</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Miau-vindos,</h1>
+            <h1 class="banner__titulo">somos todos lov lov</h1>
+            <p class="banner__subtitulo">Gatinhos para Adoção Responsável</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao">
+            <h2 class="card-introducao__titulo">Vem me amar! </h2>
+            <h2 class="card-introducao__sub-titulo">Adoção Responsável</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Aqui é um cantinho para interagir com pessoas que amam gatos. Um espaço para falar sobre tudo que faz parte do mundo apaixonante dos felinos e as formas de adotar um peludinho. </p>
+                    <p>Um dos grandes benefícios de ter um gato é o fato de ele ser considerado um pet independente. Isso significa que eles possuem menos tarefas diárias, já que seus pets cuidam de si mesmos sozinhos.</p>
+                    <p>Além disso, para entreter um gato, basta oferecer alguns brinquedos e acessórios, além de muito carinho e atenção. Outro bom motivo para tirar um felino da rua é que, assim, você pode fazer a castração do gato e impedir a proliferação
+                        de animais que não terão condição para se desenvolverem com saúde.</p>
+                </div>
+                <div class="imagem-gatos">
+                <img src="./img/gatos varios.jpeg" alt="varios-gatos" class="container-texto__imagem">
+            </div>
+            </div>
+        </section>
+        <section class="container-trajetoria">
+            <h2 class="container-trajetoria__titulo">Adoção de gatos: por que e como adotar</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Se você procura um companheiro independente, carinhoso e de fácil adaptação, talvez a melhor escolha seja a adoção de gatos. Os benefícios da adoção são inúmeros: além de ajudar a salvar vidas, a companhia dos gatos pode reduzir os sintomas
+                    de uma série de doenças.
+            </div>
+            </div>
+            <div class="imagem-canela">
+                <img src="./img/Farofa-e-Canela-tomando-cafe.jpg" alt="Farofa-e-Canela-tomando-cafe">
+            </div>
+            <div class="container-lista">
+                <h3>Oito razões para optar pela adoção de gatos</h3>
+                <ul class="lista__item">
+                    <li>Sua saúde vai melhorar</li>
+                    <li>Você está salvando uma vida</li>
+                    <li>Você encontrará um animal de estimação perfeito</li>
+                    <li>Você vai economizar dinheiro</li>
+                    <li>Você permite que outros gatos sejam ajudados</li>
+                    <li>Você não terá que se preocupar muito com a manutenção da pelagem</li>
+                    <li>Você vai ganhar um novo membro da família sem ter tanto trabalho</li>
+                    <li>Gatos não são carentes</li>
+                </ul>
+            </div>
+        </section>
+        </section>
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Cat Contatos</h2>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Quantos gatinhos quer adotar?:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Seu E-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Assunto"></textarea>
+
+                    <label for="comidas">Prefere macho ou fêmea?</label>
+                    <select name="comidas-que-eu-gosto" id="comidas">
+                <option value="coxinha">Macho</option>
+                <option value="hamburguer">Fémea</option>
+                <option value="pizza">Sem preferência</option>
+            </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label>Concorda com os termos de adoção?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Taiana Aguilera - Aula {Reprograma} | © Copyright 2021</p>
+    </footer>
+
+</body>
+
+</html>

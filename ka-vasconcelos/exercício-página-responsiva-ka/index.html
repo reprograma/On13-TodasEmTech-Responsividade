@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <title>Ka Vasconcelos Dev Front-end Student {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#esta-sou-eu" class="menu-navegacao__link">Esta sou eu!</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, eu sou a Ka Vasconcelos Dev Front-end {Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre o meu mundo!</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao" id="esta-sou-eu">
+            <h2 class="card-introducao__titulo">Um pouquinho sobre mim...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Sou uma pessoa reservada e introspectiva, gosto do silêncio, do meu cachorro, de ficar em casa e cozinhar.</p>
+                    <p>Atualmente vivo em São Paulo, uma cidade incrível, caótica e diversa, mas de uma abismal desigualdade social.</p>
+                    <p>Sou professora de idiomas, mas no meu tempo livre curto ouvir podcasts, assistir documentários e estudar sobre programação. Ah! E também tento tocar contrabaixo.</p>
+                </div>
+                <img src="./img/grlpwr.jpg" alt="GirlPower" class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar uma parte da minha trajetória...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Cursei Direto na Universidade Federal do Mato Grosso, mas nunca exerci a profissão. Depois que eu terminei a faculdade fui morar na Europa, onde conheci vários países e diferentes culturas.</p>
+                <p>Desde de 2017 moro em São Paulo, adoro o clima, os lugares, e o ritmo frenético da cidade. Aqui conheci muita gente legal e engajada. Foi aqui também que comecei a me interessar por programação.</p>
+
+            </div>
+
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>Austrália</li>
+                        <li>Canadá</li>
+                        <li>França</li>
+                        <li>Japão</li>
+                        <li>Cuba</li>
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                    <ul class="lista__item">
+                        <li>Touch - Shura</li>
+                        <li>Am I the One? - Beth Hart</li>
+                        <li>This Land is Your Land - Sharon Jones</li>
+                        <li>Sleeping with Ghosts - Placebo</li>
+                        <li>Lotus - R.E.M.</li>
+                    </ul>
+
+                </div>
+                <div class="lista">
+                    <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                    <ul class="lista__item">
+                        <li>Neuromancer - William Gibson</li>
+                        <li>A Elite do Atraso - Jessé Souza</li>
+                        <li>Panfleto desde el Planeta de los Simios - Manuel Vázquez Montalbán</li>
+                        <li>Contra a Servidão Voluntária - Marilena Chaui</li>
+                        <li>O Anticristo - Friedrich Nietzsche</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form>
+                <div class="campo-form">
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Qual a sua idade?:</label>
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite o seu email:</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Digite o seu telefone:</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(DDD) XXXXX-XXXX">
+
+                    <label for="mensagem">Digite a sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="musicas">Qual a seu estilo de música favorito?</label>
+                    <select name="musicas-que-eu-gosto" id="musicas">
+                                <option value="rock">Rock</option>
+                                <option value="indie">Indie</option>
+                                <option value="blues">Blues</option>
+                            </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Site desenvolvido por Juliane Andrade - Aula {Reprograma} | © Copyright 2021</p>
+    </footer>
+
+</body>
+
+</html>

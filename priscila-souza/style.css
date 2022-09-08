@@ -1,0 +1,96 @@
+* {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: palevioletred;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+h1 + div {
+  width: 100%;
+}
+
+div > p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+input:first-child {
+  color: brown;
+}
+
+.div-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-2 > input {
+  margin: 15px;
+}
+
+.div-2 > input:focus {
+  background-color: rgb(250, 245, 245);
+}
+
+.div-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.div-3 > img {
+  width: 90vw;
+  max-width: 800px;
+  margin: 10px;  
+}
+
+.div-3 + div {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+}
+
+div > a {
+  text-decoration: none;
+  color: brown;
+  font-size: 1.2rem;
+}
+
+div > a:hover {
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .div-3 + div {
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  }
+
+  * {
+    font-size: 16px;
+    background-color: rgb(184, 189, 169);
+  }
+}
+
+@media (min-width: 1280px){
+    *{
+        font-size: 18px;
+        background-color: rgb(255, 136, 136);
+    }
+
+    .div-2 > input {
+        max-width: 20vw;
+      }
+
+    .div-2{
+          flex-direction: row;
+          justify-content: center;
+      }
+}

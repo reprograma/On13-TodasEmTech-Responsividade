@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+        <meta charset="UTF-8">
+        <title>Super Aluna {Reprograma}</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <a href="" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                    <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                    <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        
+            <div class="banner" >
+                <h1 class="banner__titulo" >Olá, eu sou a super Aluna Tainá {Reprograma}</h1>
+                <p class="banner__subtitulo" >Tá passada?Vem conhecer um pouco sobre o meu mundo</p> 
+            </div>
+
+        </header>
+        <main>
+            <section class="card-introducao" id="super-aluna">
+                <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+                <div class="container-texto">
+                    <div class="container-texto__paragrafos">
+                        <p>Capixaba perdida em Salvador, 25 anos, ama tecnologia e espera trabalhar fazendo o que gosta.</p>
+                        <p>Aluna da {reprograma} com muito orgulho. </p>
+                    </div>
+                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                </div>
+            </section>
+            <section class="container-trajetoria" id="trajetoria">
+                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+                <div class="container-trajetoria__paragrafo">
+                    <p>Graduada em Direito, busco equilíbrio e justiça em tudo que faço.</p>
+                    <p>Migrando de área para tecnologia e vivendo um dia de cada vez. </p>
+    
+                </div>
+
+            </section>
+            <section class="card-gostos">
+                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Meus livros prediletos: </h3>
+                        <ul class="lista__item">
+                            <li>Os Filhos de Ester</li>
+                            <li>Crônicas de Narnia</li>
+                            <li>A Mediadora</li>
+                            <li>Trilogia Mago Supremo</li>
+                            <li>Mundo sem fim</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Amo ouvir música. Confira as meus cantores e bandas favoritas:</h3>
+                        <ul class="lista__item">
+                            <li>Oasis</li>
+                            <li>Jorge e Mateus</li>
+                            <li>Foster the people</li>
+                            <li>Jota Quest</li>
+                            <li>Engenheiros do Hawai</li>
+                        </ul>
+
+                    </div>
+                    <div class="lista">
+                        <h3>Adoro esportes eletrônicos, meus jogos prediletos são:</h3>
+                        <ul class="lista__item">
+                            <li>League of Legens</li>
+                            <li>Pubg</li>
+                            <li>GTA</li>
+                            <li>Super Mario Bross</li>
+                            <li>The sims</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="card-fale-conosco" id="fale-conosco">
+                <h2>Fale conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome">Nome completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        
+                        <label for="idade">Qual a sua idade?:</label>
+                        <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+                        
+                        <label for="email">Digite o seu email:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                        <label for="telefone">Digite o seu telefone:</label>
+                        <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="mensagem">Digite a dia mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                        <label for="comidas">Qual a sua comida favorita?</label>
+                        <select name="comidas-que-eu-gosto" id="comidas">
+                            <option value="coxinha">Coxinha</option>
+                            <option value="hamburguer">Hambúrguer</option>
+                            <option value="pizza">Pizza</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <div>
+                            <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                            <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                            <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                        </div>     
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+                </form>
+
+            </section>
+            <section>
+                <h2
+            <p>Site desenvolvido por Tainá Conti - Aula {Reprograma} | © Copyright 2021</p>
+        </footer>
+        
+    </body>
+</html>
