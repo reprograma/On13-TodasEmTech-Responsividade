@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/daniele-marques/style.css" />
+  <title>Super Aluna {reprograma}</title>
+</head>
+
+<body>
+  <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+  <header class="cabecalho">
+    <nav class="menu">
+      <a href="" class="menu__logo">{ }</a>
+      <ul class="menu-navegacao">
+        <li><a href="#banner" class="menu-navegacao__link">Super Aluna</a></li>
+        <li><a href="#container-trajetoria__paragrafo" class="menu-navegacao__link">Trajetória</a></li>
+        <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <div id="banner" class="banner">
+      <h1 class="banner__titulo">Olá, eu sou a Super Aluna Daniele {Reprograma}</h1>
+      <p class="banner__subtitulo">
+        Tá passada? Vem conhecer um pouco sobre o meu mundo
+      </p>
+    </div>
+  </header>
+  <main>
+    <section class="card-introducao">
+      <h2 class="card-introducao__titulo">
+        Um pouco sobre o meu mundinho...
+      </h2>
+      <div class="container-texto">
+        <div class="container-texto__paragrafos">
+          <p>
+            Feminista, baiana, nordestina, 28 anos e mãe de um menino lindo que me inspira a melhorar como pessoa todos
+            os dias. Sou ativista da causa animal, luto pelos direitos das pessoas com deficiência, luto pela inclusão e
+            contra o capacitismo.
+          </p>
+
+        </div>
+        <img src="./../imagens/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem" />
+      </div>
+    </section>
+    <section class="container-trajetoria">
+      <h2 class="container-trajetoria__titulo">
+        Deixa eu te contar um pouco sobre a minha trajetória nessa vida...
+      </h2>
+      <div id="container-trajetoria__paragrafo" class="container-trajetoria__paragrafo">
+        <p>
+          Sou a Daniele. Estudante de Desenvolvimento Front-End. Eu atuava na área da educação e durante meu curso de
+          Letras, em meio ao meu TCC, que tinha o tema: "Tecnologia que auxiliam pessoas com deficiência na educação",
+          tive meu primeiro contato com o mundo Tech. Fiquei fascinada com o poder da tecnologia e deste momento em
+          diante não parei mais de estudar sobre. Troquei de curso e sigo feliz com a minha escolha. Meu objetivo é
+          ajudar as pessoas e tornar o mundo mais inclusivo através da tecnologia.
+
+          Atualmente estou cursando Tecnologia em Desenvolvimento Web e sou aluna da Reprograma turma 13 do 'Todas em
+          Tech', minhas stacks no front-end são: React.Js (em breve), HTML, CSS, Javascript (em breve). Também possuo noções de UX/UI e estou
+          sempre disposta a aprender!
+
+          Vamos tomar um café e falar de código ? :)
+        </p>
+      </div>
+    </section>
+    <section class="card-gostos">
+      <h2 class="card-gostos__titulo">
+        Veja o que eu mais gosto nessa vida...
+      </h2>
+      <div class="container-listas">
+        <div class="lista">
+          <h3>
+            Amo viajar, e tenho uma listinha de quais países quero conhecer:
+          </h3>
+          <ul class="lista__item">
+            <li>Coreia Do Sul</li>
+            <li>Japão</li>
+            <li>EUA</li>
+            <li>Grécia</li>
+            <li>Turquia</li>
+          </ul>
+        </div>
+        <div class="lista">
+          <h3>Amo ouvir música. Confira as minhas bandas/musicos favoritas:</h3>
+          <ul class="lista__item">
+            <li>Pitty</li>
+            <li>Imagine Dragons</li>
+            <li>Katy Perry</li>
+            <li>K-music</li>
+            <li>Three Days Grace</li>
+          </ul>
+        </div>
+        <div class="lista">
+          <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+          <ul class="lista__item">
+            <li>Saga Harry Potter</li>
+            <li>Saga Game of Thrones</li>
+            <li>Saga Os Sete (André Vianco - escritor brasileiro)</li>
+            <li>As cronicas de Narnia</li>
+            <li>As areias do tempo (Sidney Sheldon)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <section  class="card-fale-conosco" id="fale-conosco">
+        <h2>Fale conosco</h2>
+        <form>
+          <div class="campo-form">
+            <label for="nome">Nome completo:</label>
+            <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+
+            <label for="idade">Qual a sua idade?:</label>
+            <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+
+            <label for="email">Digite o seu email:</label>
+            <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Digite o seu telefone:</label>
+            <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Digite a dia mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+            <label for="comidas">Qual a sua comida favorita?</label>
+            <select name="comidas-que-eu-gosto" id="comidas">
+              <option value="coxinha">Coxinha</option>
+              <option value="hamburguer">Hambúrguer</option>
+              <option value="pizza">Pizza</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Como podemos entrar em contato com você?</legend>
+            <div>
+              <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label
+                for="whatsapp">Whatsapp</label>
+              <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+              <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+            </div>
+          </fieldset>
+          <div>
+            <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+          </div>
+          <div class="form-botao">
+            <input type="submit" value="Enviar formulário">
+          </div>
+        </form>
+
+      </section>
+      <section>
+  </main>
+  <footer>
+    <p>
+      Site desenvolvido por Daniele Marques - Aula {Reprograma} | © Copyright
+      2021
+    </p>
+  </footer>
+  <script src="./css/teste.js"></script>
+</body>
+
+</html>
